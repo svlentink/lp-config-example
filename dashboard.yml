@@ -4,9 +4,9 @@
   data: PACKLIST_DIR=../lp-config-example/packlist
 
 - type: baseurl
-  data: REPO_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example
+  data: REPO_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main
 - type: baseurl
-  data: PACKLIST_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/packlist
+  data: PACKLIST_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main/packlist
 - type: title
   data: Example Dashboard
 - ./stylesheets/all.yml
