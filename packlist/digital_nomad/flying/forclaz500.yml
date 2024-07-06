@@ -1,0 +1,86 @@
+
+- type: desc
+  data: |
+    After using the MH100 for about 10 flights,
+    I noticed I was not using my laptop on the road because
+    it's just too hard to reach.
+    That's why I switched to the
+    Forclaz Travel 500 ORGANIZER.
+    This backpack does not have a stiff frame,
+    but I have my laptop in it always anyways.
+    This Forclaz has a separate zipper for the laptop pouch.
+
+    In case the ground steward is checking bag sizes, we;
+    wear one vest, a second as a skirt and our jacket.
+    The jacket we fill on one side with our toiletry bag and on the other with pill container.
+    We wear our
+    [Zipplicity Neck Pack/tubular travel pillow](https://eur.shein.com/pdsearch/travel%20neck%20pillow%20filling).
+
+
+- type: nestedlist
+  data:
+
+  - $PACKLIST_DIR/sublist/tubular-travel-pillow.yml
+
+  - backpack:
+      front:
+      - rain cover
+      - notebook + pen
+      sides:
+      - water bottle with clip
+      - umbrella
+      - sandals or flip flops
+      - re-usable zip ties to strap jacket to bag
+      laptop compartment:
+      - laptop
+      - paperwork?
+      - ereader
+      top:
+      - glasses case: $PACKLIST_DIR/sublist/clothes/clothes/glasses.yml
+      - condoms
+      main:
+        L small top:
+        - passport
+        L top:
+        - $PACKLIST_DIR/sublist/clothes/clothes.yml
+        - $PACKLIST_DIR/sublist/clothes/undies.yml
+        - empty zip lock bag for dirty laundry
+        - see through packing cube with liquids
+        - $PACKLIST_DIR/sublist/toiletries.yml
+        L bottom:
+        - $PACKLIST_DIR/sublist/electronics.yml
+        - packing cube:
+          - eye mask (for sleeping)
+          - carabiner:
+            - keys
+            - earplugs in keychain
+            - keys other/parents house
+          - tiny zip lock bag:
+            - spare passport photos
+            - backup credit card
+          - pen case:
+            - pen
+            - permanent marker
+            - coins for public toilet
+        R:
+          drawstring backpack:
+          - nuts
+          - dark chocolate
+      
+  - on me:
+    - bone-conducting bluetooth headphones
+    - hidden-pouch: $PACKLIST_DIR/sublist/hidden-pouch.yml
+    - running belt:
+      - phone
+
+    - jacket / jeans: $PACKLIST_DIR/sublist/clothes/3in1jacket.yml
+
+  - todo:
+    - elastics for leg workout
+    - selfie stick
+
+  - non physical items:
+    - $PACKLIST_DIR/sublist/tips.yml
+    - $PACKLIST_DIR/sublist/up-front.yml
+    - $PACKLIST_DIR/sublist/last-minute.yml
+

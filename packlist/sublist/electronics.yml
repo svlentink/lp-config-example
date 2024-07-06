@@ -1,0 +1,38 @@
+
+daytrip electronics packing cube:
+# ereader, powerbank, laptop, phone
+- 65w multiport USB-C charger
+- powerbank
+- USB-A to USB-C cable
+- USB-C to USB-C
+
+electronics packing cube:
+- smartwatch charger
+- USB to ethernet
+- headset
+- ethernet cable
+- bootable linux USB
+- UK power adapter
+- charging cables:
+  - smartwatch
+  - bluetooth bone-conducting headset
+  - usb-c short
+  - usb-c long
+
+
+skipped:
+- extra simcard (esim nowadays using Airalo)
+- simcard pin/needle for switch
+- bank/work authentication device (RSA token)
+- powerbank / batteries
+- mifi/ranpberrypi/orangepi
+- USB charger 2A (2x)
+- dupont cables
+- tin box (small items and magnetic shielding):
+  - micro USB to USB C adapter
+  - memory card + adaptor = USB stick
+  - usb wifi adapter
+- kensington laptop lock
+- micro USB cable (2x)
+- USB light
+
