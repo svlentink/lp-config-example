@@ -1,9 +1,12 @@
 - type: baseurl
   data: PERSONAL_DIR=https://dev.lent.ink/preview/gits/pp/lp
 - type: baseurl
-  data: PACKLIST_DIR=https://raw.githubusercontent.com/svlentink/life-planner/example/packlist
+  data: PACKLIST_DIR=../lp-config-example/packlist
+
 - type: baseurl
-  data: PACKLIST_DIR=./example/packlist
+  data: REPO_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example
+- type: baseurl
+  data: PACKLIST_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/packlist
 - type: title
   data: Example Dashboard
 - ./stylesheets/all.yml
@@ -30,7 +33,7 @@
       data:
         student:
         - type: roles
-          data: &personas_student ./example/personas/student.yml
+          data: &personas_student $REPO_DIR/personas/student.yml
         working:
         - type: desc
           data: |
@@ -40,7 +43,7 @@
             I want to see myself as an athlete, which motivates me to eat healthy and take care of my body.
             I want my children to see me as someone that manages stress well by going out in nature and playing an instrument to relax.
         - type: roles
-          data: &personas_work ./example/personas/work.yml
+          data: &personas_work $REPO_DIR/personas/work.yml
 
 
     vision:
@@ -49,11 +52,11 @@
     - type: tabs
       data:
         student:
-        - ./example/writings/manual/vision-board.yml
+        - $REPO_DIR/writings/manual/vision-board.yml
         - type: personas
           data: *personas_student
         - type: foundation
-          data: &foundation_main ./example/foundation/main.yml
+          data: &foundation_main $REPO_DIR/foundation/main.yml
         working:
         - type: personas
           data: *personas_work
@@ -75,29 +78,29 @@
         - type: desc
           data: Working from home in rainy months in Porto
         - type: baseurl
-          data: ROUTINES_FILE=./example/routines/2023-winter.yml
-        - ./example/tablayouts/routine.yml
+          data: ROUTINES_FILE=$REPO_DIR/routines/2023-winter.yml
+        - $REPO_DIR/tablayouts/routine.yml
 # The following is historical
         student:
         - type: baseurl
-          data: ROUTINES_FILE=./example/routines/student.yml
-        - ./example/tablayouts/routine.yml
+          data: ROUTINES_FILE=$REPO_DIR/routines/student.yml
+        - $REPO_DIR/tablayouts/routine.yml
         digital nomad:
         - type: baseurl
-          data: ROUTINES_FILE=./example/routines/digital-nomad.yml
-        - ./example/tablayouts/routine.yml
+          data: ROUTINES_FILE=$REPO_DIR/routines/digital-nomad.yml
+        - $REPO_DIR/tablayouts/routine.yml
         pre-covid:
         - type: desc
           data: Pre-covid I already worked two days a week from home.
         - type: baseurl
-          data: ROUTINES_FILE=./example/routines/pre-covid.yml
-        - ./example/tablayouts/routine.yml
+          data: ROUTINES_FILE=$REPO_DIR/routines/pre-covid.yml
+        - ./tablayouts/routine.yml
         WFH winter NL:
         - type: desc
           data: Working From Home in NL during winter
         - type: baseurl
-          data: ROUTINES_FILE=./example/routines/2019-winter.yml
-        - ./example/tablayouts/routine.yml
+          data: ROUTINES_FILE=$REPO_DIR/routines/2019-winter.yml
+        - $REPO_DIR/tablayouts/routine.yml
 
     life lists:
     - type: tabs
@@ -108,10 +111,10 @@
             We also use this space to define activities which we allow ourself when in need of some slacking.
             These slacking activities should idealy be short and finite.
         - type: lists
-          data: ./example/lifelists/main.yml
+          data: $REPO_DIR/lifelists/main.yml
         another:
         - type: lists
-          data: ./example/lifelists/example2.yml
+          data: $REPO_DIR/lifelists/example2.yml
 
     tmms:
     - type: title
@@ -126,7 +129,7 @@
       data:
         student:
         - type: timemangementmatrices
-          data: ./example/tmm/student.yml
+          data: $REPO_DIR/tmm/student.yml
         work:
         - type: timemangementmatrices
           data: $PERSONAL_DIR/tmatrices.yml
@@ -176,19 +179,19 @@
             - type: desc
               data: When micro-managing the route, you quickly add 50% to the travel time.
             - type: route
-              data: ./example/roadtrips/micro-managing.yml
+              data: $REPO_DIR/roadtrips/micro-managing.yml
             Bilbao-V1:
             - type: route
-              data: ./example/roadtrips/nl-spain.yml
+              data: $REPO_DIR/roadtrips/nl-spain.yml
             Bilbao-V2:
             - type: route
-              data: ./example/roadtrips/nl-bordeaux.yml
+              data: $REPO_DIR/roadtrips/nl-bordeaux.yml
             small border crossings:
             - type: route
-              data: ./example/roadtrips/border-crossings.yml
+              data: $REPO_DIR/roadtrips/border-crossings.yml
             ams:
             - type: route
-              data: ./example/roadtrips/walking-amsterdam.yml
+              data: $REPO_DIR/roadtrips/walking-amsterdam.yml
 
     monitoring:
     - type: desc
@@ -206,5 +209,5 @@
         For goals I'm working towards, like the bar-muscle-up I put a decimal value
         for all the day that I was working on it but still wasn't able to achieve it.
 
-    - ./example/metrics/main.yml
+    - $REPO_DIR/metrics/main.yml
 
