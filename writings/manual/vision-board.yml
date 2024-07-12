@@ -44,7 +44,8 @@
     We use a configuration language instead of a GUI because we want the user to feel like an admin of one's life.
     GUIs abstract you from what is underneath and requires less grind,
     this tool is for dedicated users, who are committed to making a change, a change in their own lives.
-    If you need a GUI, you're not the target audience, you're not willing to put in the work needed.
+    If you need a GUI, you're not the target audience, you're not willing to put in the work needed,
+    please follow a road with less resistance, a path well paved.
 
     ### Self hosted
     This YAML and CSV based approach allows one to totally self-host their own data sources.

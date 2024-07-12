@@ -9,7 +9,7 @@ rear_seats:
     - sleeping bag
   folding_crate_2:
     clothes:
-    - $PACKLIST_DIR/sublist/clothes/clothes/swim-gear.yml
+    - $PACKLIST_DIR/sublist/clothes/swim-gear.yml
     - plastic bag: $PACKLIST_DIR/sublist/clothes/clothes.yml
   folding_crate_3:
   - towels

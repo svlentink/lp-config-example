@@ -17,7 +17,7 @@ data:
       sides:
       - carabiners
       - water bottle with clip
-      glasses compartment: $PACKLIST_DIR/sublist/clothes/clothes/glasses.yml
+      glasses compartment: $PACKLIST_DIR/sublist/clothes/glasses.yml
     jacket / jeans: $PACKLIST_DIR/sublist/motorcycle/jacket.yml
 
 - motorcycle (including 2x 35L givi hard cases):
@@ -53,7 +53,7 @@ data:
     - tupperware container: $PACKLIST_DIR/sublist/electronics.yml
     - plastic freezer/seal bag:
       - bluetooth headphones in case
-    - $PACKLIST_DIR/sublist/clothes/clothes/swim-gear.yml
+    - $PACKLIST_DIR/sublist/clothes/swim-gear.yml
     R removable case (35L):
     - plastic bag:
       - laptop sleeve:

@@ -33,7 +33,7 @@ data:
       sides:
       - carabiners
       - water bottle with clip
-      glasses compartment: $PACKLIST_DIR/sublist/clothes/clothes/glasses.yml
+      glasses compartment: $PACKLIST_DIR/sublist/clothes/glasses.yml
     
     jacket / jeans: $PACKLIST_DIR/sublist/motorcycle/jacket.yml
 
@@ -43,7 +43,7 @@ data:
     - spare attachment/lashing strap
     - mesh wash bag: $PACKLIST_DIR/sublist/clothes/clothes.yml
     - $PACKLIST_DIR/sublist/clothes/undies.yml
-    - $PACKLIST_DIR/sublist/clothes/clothes/clothes/swim-gear.yml
+    - $PACKLIST_DIR/sublist/clothes/swim-gear.yml
     - instrument (ukulele)
     - tissues
     - umbrella
@@ -61,7 +61,7 @@ data:
     - plastic bag:
       - winter lining motor gear
     - $PACKLIST_DIR/sublist/thermo-bag.yml
-    locked front storage: $PACKLIST_DIR/sublist/clothes/clothes/glasses.yml
+    locked front storage: $PACKLIST_DIR/sublist/clothes/glasses.yml
     left front storage: $PACKLIST_DIR/sublist/motorcycle/front.yml
     L pannier (18L):
     - bluetooth speaker
