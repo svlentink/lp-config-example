@@ -9,6 +9,9 @@
     This backpack does not have a stiff frame,
     but I have my laptop in it always anyways.
     This Forclaz has a separate zipper for the laptop pouch.
+    After the first time use, I found that when full, I need to have the shoulder
+    straps on the maximum length if using the hip band,
+    thus if you are taller than 185cm, skip this backpack.
 
     In case the ground steward is checking bag sizes, we;
     wear one vest, a second as a skirt and our jacket.
@@ -38,6 +41,7 @@
       top:
       - glasses case: $PACKLIST_DIR/sublist/clothes/glasses.yml
       - condoms
+      - tissues
       main:
         L small top:
         - passport
@@ -55,6 +59,7 @@
             - keys
             - earplugs in keychain
             - keys other/parents house
+            - pocket measuring tape
           - tiny zip lock bag:
             - spare passport photos
             - backup credit card
