@@ -1,6 +1,6 @@
 
 - type: baseurl
-  data: METRICS_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main/tracking
+  data: METRICS_DIR=https://raw.githubusercontent.com/svlentink/csvs-example/main
 
 - type: title
   data: Daily metrics
