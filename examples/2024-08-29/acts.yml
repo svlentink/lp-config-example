@@ -1,0 +1,51 @@
+
+eat:
+  interval: daily
+  moscow: must
+  desc: breakfast, whey shake, lunch, snack, dinner, snack
+  energize: true
+  flow: true
+  maslow: physiological
+  goals: {}
+
+🧘🙏📖:
+  interval: daily
+  moscow: should
+  desc: meditate, prayer, study tenach
+  energize: false
+  flow: true
+  maslow: belong
+  goals: {}
+
+workout:
+  interval: daily
+  moscow: should
+  desc: Workout done at home or outside
+  energize: true
+  flow: false
+  maslow: physiological
+  goals: {}
+
+data_course: &study
+  interval: weekly
+  moscow: could
+  desc: Do data course next to Uni studies
+  energize: false
+  flow: false
+  maslow: esteem
+  goals: {}
+
+english:
+  interval: daily
+  moscow: could
+  desc: Get fluent in English for better job opportunities
+  energize: false
+  flow: false
+  moscow: safety
+  goals: {}
+
+uni_homework:
+  <<: *study
+  desc: getting engineer degree
+
+

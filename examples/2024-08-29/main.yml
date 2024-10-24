@@ -1,0 +1,67 @@
+
+- type: baseurl
+  data: REPO_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main
+  #data: REPO_DIR=https://dev-fs.lent.ink/gits/lp-config-example/
+
+- type: title
+  data: Brazilian student in Porto
+- ./stylesheets/all.yml
+- type: css
+  data: ./stylesheets/cat.css
+
+- type: roles
+  data: &personas_student
+  - title: Healthy person
+    desc: Mentally and physically fit, Mind body spirit
+    emoji: '&#129496;'
+    goals: {}
+  - title: Gym rat
+    desc: Do you even lift bro?
+    emoji: '&#127947;&#65039;'
+    goals: {}
+  - title: Student
+    desc: Working towards a remote job.
+    emoji: '&#129489;&#8205;&#127891;'
+    goals: {}
+  - title: Talmidah
+    desc: Gerim
+    emoji: '&#128333;'
+    goals: {}
+
+- type: personas
+  data: *personas_student
+
+- type: foundation
+  data: 
+    values: # step 01; foundation for focus in life
+      desc: Provide meaning in life, proud, dreams and satisfaction
+      data:
+        altruistic: Love people, use stuff.
+        health: Unhealty mind or body develops when one does not invest.
+        freedom: ''
+        stability: ''
+        Na'aseh V'nishma: Doing before understanding
+    strengths:
+      desc: Innate (developed) talents or yet to explore strengths
+      data:
+        philomath: Hunger for learning
+        analytic: Structured
+        conscientious: ''
+        strategic: ''
+        decisiveness: ''
+        grit: ''
+    weaks: # pitfalls
+      desc: Struggle and difficulty, costs more energy and willpower (pitfalls)
+      data:
+        communication: I tend to hide in the comfort of protocols over communication
+        focus: ''
+        procrastination: ''
+        pessimistic: ''
+        OCD: ''
+        blunt: no filter / flap out
+
+- type: baseurl
+  data: ROUTINES_FILE=$REPO_DIR/examples/2024-08-29/routines.yml
+- type: baseurl
+  data: ACTS_FILE=$REPO_DIR/examples/2024-08-29/acts.yml
+- $REPO_DIR/tablayouts/routine.yml

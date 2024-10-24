@@ -1,0 +1,18 @@
+# This jacket is stored in my prepacked travel backpack
+
+"3 in 1 jacket":
+  Chest pocket:
+  - drawstring backpack (to put jacket in in case the bag is full with groceries)
+  - Forclaz 10L compact backpack
+  L pocket:
+  - 2x nuts
+  - $PACKLIST_DIR/sublist/electronics.yml
+  R pocket:
+  - chewing gum
+  - tissues
+  - $PACKLIST_DIR/sublist/toiletries.yml
+  Sleeves:
+  - gloves attached
+  skipped:
+  - decoy wallet with one card and few bucks
+  - plectrum

@@ -1,12 +1,17 @@
 - type: baseurl
-  data: PERSONAL_DIR=https://dev.lent.ink/preview/gits/pp/lp
+  data: PERSONAL_DIR=https://dev-fs.lent.ink/gits/pp/lp
 - type: baseurl
   data: PACKLIST_DIR=../lp-config-example/packlist
 
 - type: baseurl
   data: REPO_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main
 - type: baseurl
+  data: REPO_DIR=https://dev-fs.lent.ink/gits/lp-config-example
+- type: baseurl
   data: PACKLIST_DIR=https://raw.githubusercontent.com/svlentink/lp-config-example/main/packlist
+- type: baseurl
+  data: PACKLIST_DIR=https://dev-fs.lent.ink/gits/lp-config-example/packlist
+
 - type: title
   data: Example Dashboard
 - ./stylesheets/all.yml

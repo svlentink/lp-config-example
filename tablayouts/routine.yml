@@ -2,7 +2,7 @@
 - type: calendar
   data: &data
     routines: $ROUTINES_FILE
-    activities: $REPO_DIR/activities/acts.yml
+    activities: $ACTS_FILE
 - type: routines
   data: *data
 - type: plannedactivities

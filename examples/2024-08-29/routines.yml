@@ -1,0 +1,54 @@
+
+morning_routine:
+  start:
+  - days: &workdays [mo,tu,we,th,fr]
+    time: 05:30
+    trigger: alarm
+  actions:
+  - 15 lemon_water
+  - 30 🧘🙏📖 # Pray, Tenach
+  - 45 workout
+  - 30 eat #breakfast
+
+morning_study:
+  start:
+  - days: *workdays
+    time: 07:30
+    trigger: belly_full
+  actions:
+  - 90 data_course
+  - 60 english
+  - 15 eat # whey_protein
+  - 105 uni_homework
+
+lunch:
+  start:
+  - days: *workdays
+    time: 12:00
+    trigger: belly_empty
+  actions:
+  - 30 eat #lunch
+  - 90 rest # and digest
+
+afternoon_study:
+  start:
+  - days: *workdays
+    time: 14:00
+    trigger: rested
+  actions:
+  - 60 secondary_language # study another language on duolingo
+  - 45 🧘🙏📖 # Torah
+  - 15 eat # snack
+  - 60 data_course
+  - 60 uni_homework #review
+
+evening:
+  start:
+  - days: *workdays
+    time: 18:00
+    trigger: hungry
+  actions:
+  - 60 eat #dinner
+  - 60 rest # or pray
+  - 60 eat #snack
+  - 60 entertainment # read or watch series
