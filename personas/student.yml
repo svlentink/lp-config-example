@@ -9,44 +9,43 @@
 
 - title: Healthy person
   desc: Mentally and physically fit, Mind body spirit
-  #img: http://thevitalspirit.net/wp-content/uploads/2013/12/Mind-Body-Spirit-Wellness12.jpg
   emoji: '&#129496;&#8205;&#9794;&#65039;'
   goals:
     rested:
       title: Well rested
       desc: Sleep well and take moments off
-      img: https://www.readersdigest.ca/wp-content/uploads/sites/14/2018/04/good-sleep-guide-1.jpg
+      emoji: 🛌
       intelligences:
       - intra-personal
       status: maintaining
     focus:
       title: Mental clarity 
       desc: Focus and concentration through proper diet, sleep and meditation
-      img: https://pbs.twimg.com/media/DHCbXMAXkAAcd_e.jpg
+      emoji: 🧘
       status: progressing
     dietbook:
       title: Write diet book
       desc: The chocolate diet
-      img: http://s3.india.com/wp-content/uploads/2017/07/chocolates.jpg
+      #img: http://s3.india.com/wp-content/uploads/2017/07/chocolates.jpg
       #img: http://blog.virtahealth.com/wp-content/uploads/2018/04/Calorie-Types-1.jpg
+      emoji: ✍
       status: idea
 - title: Athlete
   desc: stamina, balance, strength, flexibility and coordination
   #notes: goal physiques; Joe Manganiello, Wolverine, Joe Wicks, David Gandy
-  #img: https://www.greatestphysiques.com/wp-content/uploads/2017/06/Joe-Wicks.09.jpg
   emoji: '&#127939;'
   goals:
     muscleup:
       title: Muscle-up
       desc: Muscle-up in rings and on bar
-      img: https://i2.wp.com/workoutlabs.com/wp-content/uploads/watermarked/Muscle_Up.png
+      emoji: 💪
       status: progressing
       intelligences:
       - bodily-kinesthetic
     frontlever:
       title: Front lever
       desc: in rings and on bar
-      img: https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1687674586_1000x.jpg
+      emoji: 🤸
       status: progressing
       intelligences:
       - bodily-kinesthetic
@@ -54,134 +53,126 @@
       title: Split
       desc: General flexibility
       status: progressing
-      # image: split gymnastic
-      img: https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/ozdvn6ytshokds8a8dau
+      emoji: 🦵
       intelligences:
       - bodily-kinesthetic
     yogateacher:
       status: idea
       title: Yoga teacher
       desc: Being able to instruct people
-      img: https://draxe.com/wp-content/uploads/2019/04/kundalini-yoga-facebook.jpg
       emoji: '&#129496;'
     minutehandstand:
       title: One minute handstand
       desc: Handstand acrobatics
-      img: https://hiekim.de/wp-content/uploads/2014/12/Hie-Kim-Yoga-About-hollowback-Handstand.jpg
+      emoji: 🤸
       status: progressing
 
 #career: also check out: http://allgroanup.com/careerish/the-lure-of-comfortable/
 - title: IT professional
   desc: If working feels like a chore, a radical change is required.
-  #img: https://mentorphiledotcom.files.wordpress.com/2018/05/entrepreneur-definition-characteristics.jpg
   emoji: '&#129489;&#8205;&#128187;'
   goals:
     golang:
       title: Go language
       status: progressing
       desc: Go programmer
-      img: https://www.cuelogic.com/wp-content/uploads/2017/06/go_lang1.png
+      emoji: 🧑‍💻
     prototype:
       title: Prototyping
       desc: Fun and potential startup
-      img: https://revpart.com/wp-content/uploads/2016/05/Prototyping-copy-e1464356645610.jpg
+      emoji: 🧪
       status: maintaining
     data-engineer:
       title: Data engineer
       desc: Learn data science while being a data engineer
-      img: https://www.formorrow.nl/wp-content/uploads/vacatures-voordelen-01.png
+      emoji: 📊
       status: progressing
 #music:
 - title: Musician
   desc: Music from the soul
-  #img: https://i.ytimg.com/vi/QCbkwW6wwBk/maxresdefault.jpg
   emoji: '&#127928;'
   goals:
     songs:
       title: 10x songs
       desc: Being able to play 10 songs without paper
       status: progressing
-      img: https://www.wikihow.com/images/thumb/3/3c/Memorize-Sheet-Music-Step-3.jpg/aid193377-v4-728px-Memorize-Sheet-Music-Step-3.jpg
+      emoji: 🎼
     musictheory:
       title: Music theory
       desc: Confident to teach music theory
       status: idea
+      emoji: 🎼
     strumming:
       title: 10x strumming
       desc: Master 10 strumming patterns
       status: idea
+      emoji: ♮
 
 #faith:
 - title: Believer
   desc: Based on the holy scripture, not on the interpretation of people of it.
-  #img: http://www.jewishjewels.org/wp-content/uploads/2012/02/Yeshua-Torah-jj.jpg
   emoji: '&#128214;'
   goals:
     scriptures:
       title: Holy scriptures
       desc: Daily source of values
-      img: https://i.swncdn.com/media/800w/cms/CW/faith/39940-Bible-openBible-ThinkstockPhotos-628907682.1200w.tn.jpg
       emoji: '&#128214;'
       status: progressing
 #family:
 #  - title: Family
 #    desc: Children are a blessing, don't see it any other way.
-#    img: https://www.iaspaper.net/wp-content/uploads/2017/01/Family-300x233.jpg
+#    emoji: 👪
 #    note: https://en.wikipedia.org/wiki/Triangular_theory_of_love
 #    goals:
 #      datenite:
 #        title: Quality time
 #        desc: Date night, museum etc.
-#        img: https://www.babble.com/wp-content/uploads/2015/08/ThinkstockPhotos-478406944.jpg
+#        emoji: 🍽
 #organize:
 - title: Minimalist
-  #img: https://i.ytimg.com/vi/jrf_dMnatW0/maxresdefault.jpg
   emoji: '&#128465;&#65039;'
   goals:
     organized:
       title: Organized
       desc: Never be the bus factor
-      img: https://www.clio.com/wp-content/uploads/2020/07/Blog_Feature_Image-Organization-for-Lawyers-750x375.jpg
+      emoji: 🗃
       status: progressing
     finance:
       title: finacially secure
       desc: Digital wealth distribution/portfolio management
       status: idea
-      img: https://media.istockphoto.com/vectors/money-growth-concept-vector-illustration-of-coins-stacks-with-green-vector-id852175196
+      emoji: 💱
 - title: Socialite
   desc: As iron sharpens iron, so one person sharpens another.
-  # image of a networking event
-  #img: https://coda.newjobs.com/api/imagesproxy/ms/cms/content30/images/networking-pro.jpg
   emoji: '&#129346;'
   goals:
     social:
       title: Weekly social
       desc: One social gathering p/w
-      img: https://previews.123rf.com/images/standrets/standrets1709/standrets170904022/86815964-group-of-creative-friends-sitting-at-wooden-table-people-having-fun-while-playing-board-game.jpg
+      emoji: 🥂
       status: progressing
     meetnew:
       title: Meet new people
       desc: One new social event p/m
-      img: https://assets.entrepreneur.com/content/3x2/2000/20160328065249-shutterstock-387029653.jpeg?
+      emoji: 🤝
       status: progressing
     dance:
       status: idea
       desc: coordination, rithm
+      emoji: 🕺
     museum:
       title: Weekly museum
       desc: Acquire knowlegde while with family/friends
-      img: https://www.museumkaart.nl/Portals/0/favicon.ico
+      emoji: 🖼
       status: maintaining
 - title: Philomath
   desc: Inquisitive, epistemophilia
-  #img: https://pbskids.org/curiousgeorge/img/cg-overlay-img.jpg
-  #img: https://greatperformersacademy.com/images/images/Articles_images/tips-that-will-make-you-fast-learner.jpg
   emoji: '&#129299;'
   goals:
     spanish:
       title: Spanish B1
       status: progressing
-      img: https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png
+      emoji: 🇪🇸
       desc: Being able to read and speak Spanish
       intelligences:
       - linguistic
@@ -197,14 +188,12 @@
     reader:
       title: Become a reader
       desc: Make reading a hobby and practice speed reading
-      img: https://previews.123rf.com/images/rido/rido1112/rido111200014/11742894-smiling-relaxed-man-reading-a-book-lying-on-sofa.jpg
-      #img: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwD62zN922S8wrgfH1srk6hI3z_Dagn7T0uy2-r2W6a5b9jWmiA
-      #img: http://www.bemedialiterate.com/uploads/1/7/2/2/1722523/8910572_orig.jpg
+      emoji: 📚
       status: idea
     stats:
       title: Statistics and prob.
       desc: Foundation for data science
-      img: https://thumbs.dreamstime.com/b/make-math-fun-education-cartoon-making-would-be-breakthrough-64826876.jpg
+      emoji: 📊
       intelligences:
       - logical-mathematical
       status: idea

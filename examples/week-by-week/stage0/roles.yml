@@ -1,0 +1,38 @@
+# When you doubt if a persona fits you,
+# just hit the title in Google image search.
+# For example; 'healthy person' is different from 'athlete'
+
+- title: Teammate
+  desc: Soccer
+#https://emojiguide.org/
+  emoji: ⚽
+  goals: {}
+
+#career: also check out: http://allgroanup.com/careerish/the-lure-of-comfortable/
+- title: Employee
+  desc: If working feels like a chore, a radical change is required.
+  emoji: 💼
+  goals: {}
+
+- title: Musician
+  desc: Music from the soul
+  emoji: 🎸
+  goals: {}
+
+#faith
+- title: Believer
+  desc: Based on the holy scripture, not on the interpretation of people of it.
+  emoji: 📖
+  goals: {}
+
+#note: https://en.wikipedia.org/wiki/Triangular_theory_of_love
+- title: Parent
+  desc: Children are a blessing, don't see it any other way.
+  emoji: 👪
+  goals: {}
+
+- title: Socialite
+  desc: As iron sharpens iron, a person sharpens another
+  emoji: 🥂
+  goals: {}
+

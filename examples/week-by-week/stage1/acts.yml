@@ -1,0 +1,46 @@
+
+eat:
+  interval: daily
+  moscow: must
+  desc: breakfast, whey shake, lunch, snack, dinne
+  energize: true
+  flow: true
+  maslow: physiological
+  goals: {}
+
+meditate:
+  interval: daily
+  moscow: should
+  desc: meditate, prayer, study tenach
+  energize: false
+  flow: true
+  maslow: belong
+  goals: {}
+
+workout:
+  interval: daily
+  moscow: should
+  desc: Workout done at home or outside
+  energize: true
+  flow: false
+  maslow: physiological
+  goals: {}
+
+personal_hygiene:
+  interval: daily
+  moscow: must
+  desc: Shower, brush teeth etc.
+  energize: true
+  flow: false
+  maslow: esteem
+  goals: {}
+
+deep_work:
+  interval: daily
+  moscow: could
+  desc: Manager vs maker schedule
+  energize: false
+  flow: true
+  moscow: esteem
+  goals: {}
+

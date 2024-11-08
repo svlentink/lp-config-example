@@ -52,7 +52,7 @@
       desc: General flexibility
       status: done
       # image: split gymnastic
-      img: https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/ozdvn6ytshokds8a8dau
+      #img: https://img.olympicchannel.com/images/image/private/t_16-9_360-203_2x/f_auto/v1538355600/primary/ozdvn6ytshokds8a8dau
       emoji: 🦵
       intelligences:
       - bodily-kinesthetic
@@ -143,12 +143,14 @@
 #  - title: Family
 #    desc: Children are a blessing, don't see it any other way.
 #    img: https://www.iaspaper.net/wp-content/uploads/2017/01/Family-300x233.jpg
+#    emoji: 👪
 #    note: https://en.wikipedia.org/wiki/Triangular_theory_of_love
 #    goals:
 #      datenite:
 #        title: Quality time
 #        desc: Date night, museum etc.
 #        img: https://www.babble.com/wp-content/uploads/2015/08/ThinkstockPhotos-478406944.jpg
+#        emoji: 🍽
 #organize:
 - title: Minimalist
   #img: https://i.ytimg.com/vi/jrf_dMnatW0/maxresdefault.jpg
@@ -181,7 +183,7 @@
     meetnew:
       title: Meet new people
       desc: One new social event p/m
-      #img: https://assets.entrepreneur.com/content/3x2/2000/20160328065249-shutterstock-387029653.jpeg?
+      #img: https://assets.entrepreneur.com/content/3x2/2000/20160328065249-shutterstock-387029653.jpeg
       emoji: 🤝
       status: progressing
     museum:

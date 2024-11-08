@@ -1,0 +1,76 @@
+
+- title: Teammate
+  desc: Soccer
+  emoji: ⚽
+  goals:
+    stamina:
+      title: Stamina
+      desc: Keep up with team laps at practice
+      emoji: 🏃
+      status: progressing
+      intelligences:
+      - bodily-kinesthetic
+
+- title: Employee
+  desc: If working feels like a chore, a radical change is required.
+  emoji: 💼
+  goals: {}
+
+- title: Musician
+  desc: Music from the soul
+  emoji: 🎸
+  goals:
+    songs:
+      title: 10x songs
+      desc: Being able to play 10 songs without sheet music
+      status: progressing
+      emoji: 🎼
+    musictheory:
+      title: Music theory
+      desc: Confident to teach music theory
+      status: idea
+      emoji: 🎼
+
+- title: Believer
+  desc: Based on the holy scripture, not on the interpretation of people of it.
+  emoji: 📖
+  goals:
+    scriptures:
+      title: Holy scriptures
+      desc: Daily source of values
+      emoji: 📖
+      status: progressing
+
+- title: Parent
+  desc: Children are a blessing, don't see it any other way.
+  emoji: 👪
+  goals:
+    datenite:
+      title: Quality time
+      desc: Date night, museum etc.
+      emoji: 🍽
+    organized:
+      title: Organized
+      desc: Never be the bus factor
+      emoji: 🗃
+      status: progressing
+
+- title: Socialite
+  desc: As iron sharpens iron, a person sharpens another
+  emoji: 🥂
+  goals:
+    social:
+      title: Weekly social
+      desc: One social gathering p/w
+      emoji: 🥂
+      status: progressing
+    dance:
+      status: idea
+      desc: coordination, rithm
+      emoji: 🕺
+    museum:
+      title: Weekly museum
+      desc: Acquire knowlegde while with family/friends
+      emoji: 🖼
+      status: maintaining
+
