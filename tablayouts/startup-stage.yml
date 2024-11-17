@@ -39,19 +39,18 @@
         Why a startup? Tools that are used for running a business can also be used for running your private life.
         From a calendar to a spreadsheet to track your fitness progress, tools originally created for business.
         Your life is not like a big corporate, but a bit like a startup, nimble and agile.
+
+        We will work by first capturing the current state,
+        then slowly changing things over time (no one is able to stick with too much changes a the same time).
+        We add analytics (tracking metrics) as a motivation (don't break the streak).
         
-    pre-seed:
+    🗃pre-seed:
     - type: title
-      data: "Pre-seed stage: capture current state | Inventory Clerk"
+      data: "Pre-seed stage: capture current state | 🗃 Inventory Clerk"
     - type: markdown
       data: |
         Gradually we start to introduce more tooling into your life.
         It's not a radical switch but a gradual integration into your life.
-
-        Goals;
-        - define roles/personas
-        - start tracking your life
-        - capture current habit/calendar
 
         You determine your own pace,
         but don't go too fast, you should make things a habit,
@@ -59,27 +58,63 @@
 
     - type: title
       data: step01 Personas/roles you fulfil
+    - type: desc
+      data: |
+        We start of my visualizing the Personas/roles/identities you embody.
     - type: roles
       data: $STARTUP_DIR/stage0/roles.yml
 
     - type: title
       data: step02 capture current life
+    - type: desc
+      data: |
+        Instead of directly trying to change your current schedule.
+        Let's learn this tool by visualizing your current daily patterns.
+        This then later also functions as a reference when you make adaptations.
     - type: calendar
       data:
         routines: $STARTUP_DIR/stage0/routines.yml
-        activities: $STARTUP_DIR/stage1/acts.yml
+        activities: &actsfile $STARTUP_DIR/stage2/acts.yml
 
     - type: title
       data: step03 values
+    - type: desc
+      data: |
+        Let's contemplate and find out what our foundation is base upon.
+        What are your core beliefs/values/strenghts?
     - type: personas
       data: $STARTUP_DIR/stage0/roles.yml
     - type: foundation
-      data: $REPO_DIR/foundation/main.yml #$STARTUP_DIR/stage0/values.yml
+      data: &foundation_path $REPO_DIR/foundation/main.yml #$STARTUP_DIR/stage0/values.yml
 
-
-    seed:
     - type: title
-      data: "Seed stage: build prototype | Prototyper"
+      data: step04 Lists
+    - type: desc
+      data: |
+        Think of ways you allow yourself to be distracted
+        or what are good ways to take a break.
+        We call this slacking off.
+        When we need a break off of work,
+        walking to get a glass of water or doing pushups is a good non addictive way to break work,
+        scrolling social media isn't.
+
+        Secondly, keep a list of topics you need to ponder over.
+        Look at this list before activities that relax the mind,
+        like running in nature.
+    - type: lists
+      data: $REPO_DIR/lifelists/main.yml
+
+    - type: title
+      data: First stage completed
+    - type: desc
+      data: |
+        Congrats, you've visualized your roles and values,
+        started tracking your schedule
+        and thought of productive ways to fill your downtime.
+
+    🧪seed:
+    - type: title
+      data: "Seed stage: build prototype | 🧪Prototyper"
     - type: markdown
       data: |
         Last week we got the baseline and got into the habit of living with a calendar.
@@ -88,31 +123,102 @@
         Being correct in your planning is not the goal,
         being correct and consistent in applying the tools and living more by calendar is.
 
-    - $REPO_DIR/writings/manual/vision-board.yml
+    - type: title
+      data: step1 organize your life
+    - type: desc
+      data: |
+        Incremental increase is the focus.
+        Don't try to change everything at once,
+        sticking to your schedule is the most important.
+        Be realistic, rather be less ambitious and succeed than overly ambitious and fail.
+    - type: calendar
+      data: &seedcal
+        routines: $STARTUP_DIR/stage0/routines.yml
+        activities: *actsfile
+
+
+    - type: title
+      data: Step2 Define goals
     - type: personas
       data: $STARTUP_DIR/stage1/roles-with-goals.yml
     - type: foundation
-      data: $STARTUP_DIR/stage1/FIXME.yml
+      data: *foundation_path
+    - $REPO_DIR/writings/manual/vision-board.yml
 
-    early:
     - type: title
-      data: "Early stage: iterate upon prototype | Innovator"
+      data: step3 schedule your life
+    - type: desc
+      data: |
+        Planning your life should become an habit.
+        Being intentional with your time.
+        What percentage of the hours you have, you allocate to what.
+    - type: calendar
+      data: *seedcal
+
+    - type: title
+      data: Step4 Time management matrices
+    - type: desc
+      data: |
+        It is not useful to cram everything in a tmm, therefor we also use:
+        work planning: https://blog.lent.ink/post/open-source-erp
+        team/family board: https://trello.com/this-is-an-external-planning-tool
+        shoppinglist.google.com
+    - type: tabs
+      data:
+        one:
+        - type: timemangementmatrices
+          data: $REPO_DIR/tmm/student.yml
+        another:
+        - type: timemangementmatrices
+          data: $PERSONAL_DIR/tmatrices.yml
+
+
+
+    💡early:
+    - type: title
+      data: "Early stage: iterate upon prototype | 💡Innovator"
     - type: desc
       data: |
         Use a trigger/cue/anchor action to trigger a routine.
         cue + routine + reward = habit
 
+    - type: title
+      data: step1 depth to calendar
+    - type: desc
+      data: |
+        We are now going to derive from your calendar how you spend your time.
     - type: baseurl
-      data: ROUTINES_FILE=$REPO_DIR/routines/2023-winter.yml
+      data: ROUTINES_FILE=$STARTUP_DIR/stage0/routines.yml
+    - type: baseurl
+      data: ACTS_FILE=$STARTUP_DIR/stage2/acts.yml
     - $REPO_DIR/tablayouts/routine.yml
 
-    growth:
-    - type: title
-      data: "Growth stage: measure performance and optimize | Life Analyst"
 
-    expansion:
+
+    📈growth:
     - type: title
-      data: "Expansion stage: prove and present | Life Coach"
+      data: "Growth stage: measure performance and optimize | 📈Life Analyst"
+
+    - type: desc
+      data: |
+        What you measure you will monitor.
+        What you monitor you are aware of.
+        Awareness is the first step.
+        Tnen we acknowledge our short comings/inefficiencies.
+        From which we can begin to improve.
+        
+        A colleague asked why I did not include my deep sleep in the graph.
+        Basically I try to measure what I want to impact directly.
+        Since I already know that not drinking alcohol and doing physical exercise helps,
+        I just try to focus on that.
+        For goals I'm working towards, like the bar-muscle-up I put a decimal value
+        for all the day that I was working on it but still wasn't able to achieve it.
+
+    - $REPO_DIR/metrics/main.yml
+
+    🧑‍🏫expansion:
+    - type: title
+      data: "Expansion stage: prove and present | 🧑‍🏫Life Coach"
     - type: tabs
       data:
         main:
@@ -143,47 +249,10 @@
         - type: lists
           data: $REPO_DIR/lifelists/example2.yml
 
-    tmms:
+    🤹exit:
     - type: title
-      data: Time management matrices
-    - type: desc
-      data: |
-        It is not useful to cram everything in a tmm, therefor we also use:
-        work planning: https://blog.lent.ink/post/open-source-erp
-        team/family board: https://trello.com/this-is-an-external-planning-tool
-        shoppinglist.google.com
-    - type: tabs
-      data:
-        student:
-        - type: timemangementmatrices
-          data: $REPO_DIR/tmm/student.yml
-        work:
-        - type: timemangementmatrices
-          data: $PERSONAL_DIR/tmatrices.yml
+      data: "Exit stage: outsource and delegate | 🤹Life Manager"
 
-
-    growth:
-    - type: title
-      data: Growth stage
-    - type: desc
-      data: |
-        What you measure you will monitor.
-        What you monitor you are aware of.
-        Awareness is the first step.
-        Tnen we acknowledge our short comings/inefficiencies.
-        From which we can begin to improve.
-        
-        A colleague asked why I did not include my deep sleep in the graph.
-        Basically I try to measure what I want to impact directly.
-        Since I already know that not drinking alcohol and doing physical exercise helps,
-        I just try to focus on that.
-        For goals I'm working towards, like the bar-muscle-up I put a decimal value
-        for all the day that I was working on it but still wasn't able to achieve it.
-
-    - $REPO_DIR/metrics/main.yml
-
-
-    digital nomad:
     - type: tabs
       data:
         packing lists:
