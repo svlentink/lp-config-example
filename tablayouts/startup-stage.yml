@@ -43,185 +43,331 @@
         We will work by first capturing the current state,
         then slowly changing things over time (no one is able to stick with too much changes a the same time).
         We add analytics (tracking metrics) as a motivation (don't break the streak).
-        
+
+#   ▄▄▄▄                ▄▄▄▄                                                                                          ▄▄
+#  ██▀▀██              ██▀▀██                                                                                         ██
+# ██    ██            ██    ██            ██▄███▄    ██▄████   ▄████▄             ▄▄█████▄   ▄████▄    ▄████▄    ▄███▄██
+# ██ ██ ██            ██ ██ ██            ██▀  ▀██   ██▀      ██▄▄▄▄██            ██▄▄▄▄ ▀  ██▄▄▄▄██  ██▄▄▄▄██  ██▀  ▀██
+# ██    ██            ██    ██            ██    ██   ██       ██▀▀▀▀▀▀   █████     ▀▀▀▀██▄  ██▀▀▀▀▀▀  ██▀▀▀▀▀▀  ██    ██ 
+#  ██▄▄██      ██      ██▄▄██             ███▄▄██▀   ██       ▀██▄▄▄▄█            █▄▄▄▄▄██  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ▀██▄▄███
+#   ▀▀▀▀       ▀▀       ▀▀▀▀              ██ ▀▀▀     ▀▀         ▀▀▀▀▀              ▀▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀ ▀▀
+#                                         ██
     🗃pre-seed:
     - type: title
       data: "Pre-seed stage: capture current state | 🗃 Inventory Clerk"
-    - type: markdown
-      data: |
-        Gradually we start to introduce more tooling into your life.
-        It's not a radical switch but a gradual integration into your life.
-
-        You determine your own pace,
-        but don't go too fast, you should make things a habit,
-        it's not a homework assignment to be filled out.
-
-    - type: title
-      data: step01 Personas/roles you fulfil
-    - type: desc
-      data: |
-        We start of my visualizing the Personas/roles/identities you embody.
-    - type: roles
-      data: $STARTUP_DIR/stage0/roles.yml
-
-    - type: title
-      data: step02 capture current life
-    - type: desc
-      data: |
-        Instead of directly trying to change your current schedule.
-        Let's learn this tool by visualizing your current daily patterns.
-        This then later also functions as a reference when you make adaptations.
-    - type: calendar
+    - type: tabs
       data:
-        routines: $STARTUP_DIR/stage0/routines.yml
-        activities: &actsfile $STARTUP_DIR/stage2/acts.yml
+        intro:
+        - type: markdown
+          data: |
+            Gradually we start to introduce more tooling into your life.
+            It's not a radical switch but a gradual integration into your life.
 
-    - type: title
-      data: step03 values
-    - type: desc
-      data: |
-        Let's contemplate and find out what our foundation is base upon.
-        What are your core beliefs/values/strenghts?
-    - type: personas
-      data: $STARTUP_DIR/stage0/roles.yml
-    - type: foundation
-      data: &foundation_path $REPO_DIR/foundation/main.yml #$STARTUP_DIR/stage0/values.yml
+            You determine your own pace,
+            but don't go too fast, you should make things a habit,
+            it's not a homework assignment to be filled out.
 
-    - type: title
-      data: step04 Lists
-    - type: desc
-      data: |
-        Think of ways you allow yourself to be distracted
-        or what are good ways to take a break.
-        We call this slacking off.
-        When we need a break off of work,
-        walking to get a glass of water or doing pushups is a good non addictive way to break work,
-        scrolling social media isn't.
+#  ▄▄▄▄         ▄▄▄                         ▀▀█
+# ▄▀  ▀▄          █            ▄ ▄▄   ▄▄▄     █     ▄▄▄    ▄▄▄
+# █  ▄ █          █            █▀  ▀ █▀ ▀█    █    █▀  █  █   ▀
+# █    █          █            █     █   █    █    █▀▀▀▀   ▀▀▀▄
+#  █▄▄█    █    ▄▄█▄▄          █     ▀█▄█▀    ▀▄▄  ▀█▄▄▀  ▀▄▄▄▀
+        0.1 roles:
+        - type: title
+          data: Personas/roles you fulfil
+        - type: desc
+          data: |
+            We start of my visualizing the Personas/roles/identities you embody.
+        - type: roles
+          data: $STARTUP_DIR/stage0/roles.yml
 
-        Secondly, keep a list of topics you need to ponder over.
-        Look at this list before activities that relax the mind,
-        like running in nature.
-    - type: lists
-      data: $REPO_DIR/lifelists/main.yml
+#  ▄▄▄▄          ▄▄▄▄                                ▄                                              ▀▀█                      █
+# ▄▀  ▀▄        ▀   ▀█         ▄▄▄    ▄▄▄   ▄▄▄▄   ▄▄█▄▄  ▄   ▄   ▄ ▄▄   ▄▄▄           ▄▄▄    ▄▄▄     █     ▄▄▄   ▄ ▄▄    ▄▄▄█   ▄▄▄    ▄ ▄▄
+# █  ▄ █            ▄▀        █▀  ▀  ▀   █  █▀ ▀█    █    █   █   █▀  ▀ █▀  █         █▀  ▀  ▀   █    █    █▀  █  █▀  █  █▀ ▀█  ▀   █   █▀  ▀
+# █    █          ▄▀          █      ▄▀▀▀█  █   █    █    █   █   █     █▀▀▀▀         █      ▄▀▀▀█    █    █▀▀▀▀  █   █  █   █  ▄▀▀▀█   █
+#  █▄▄█    █    ▄█▄▄▄▄        ▀█▄▄▀  ▀▄▄▀█  ██▄█▀    ▀▄▄  ▀▄▄▀█   █     ▀█▄▄▀         ▀█▄▄▀  ▀▄▄▀█    ▀▄▄  ▀█▄▄▀  █   █  ▀█▄██  ▀▄▄▀█   █
+#                                           █
+#                                           ▀
+        0.2 capture calendar:
+        - type: title
+          data: Capture current life
+        - type: desc
+          data: |
+            Instead of directly trying to change your current schedule.
+            Let's learn this tool by visualizing your current daily patterns.
+            This then later also functions as a reference when you make adaptations.
+        - type: calendar
+          data:
+            routines: $STARTUP_DIR/stage0/routines.yml
+            activities: &actsfile $STARTUP_DIR/stage2/acts.yml
 
-    - type: title
-      data: First stage completed
-    - type: desc
-      data: |
-        Congrats, you've visualized your roles and values,
-        started tracking your schedule
-        and thought of productive ways to fill your downtime.
+#  ▄▄▄▄          ▄▄▄▄                       ▀▀█
+# ▄▀  ▀▄        ▀   ▀█        ▄   ▄   ▄▄▄     █    ▄   ▄   ▄▄▄    ▄▄▄
+# █  ▄ █          ▄▄▄▀        ▀▄ ▄▀  ▀   █    █    █   █  █▀  █  █   ▀
+# █    █            ▀█         █▄█   ▄▀▀▀█    █    █   █  █▀▀▀▀   ▀▀▀▄
+#  █▄▄█    █    ▀▄▄▄█▀          █    ▀▄▄▀█    ▀▄▄  ▀▄▄▀█  ▀█▄▄▀  ▀▄▄▄
+        0.3 values:
+        - type: title
+          data: Values
+        - type: desc
+          data: |
+            Let's contemplate and find out what our foundation is base upon.
+            What are your core beliefs/values/strenghts?
+        - type: personas
+          data: $STARTUP_DIR/stage0/roles.yml
+        - type: foundation
+          data: &foundation_path $REPO_DIR/foundation/main.yml #$STARTUP_DIR/stage0/values.yml
 
+        0.4 empty desk:
+        - type: title
+          data: Organize your space
+        - type: desc
+          data: |
+            Make sure your workspace/desk is empty, clean and organized.
+            When starting on a new topic, open a new window,
+            showing only the tabs of that topic when working on it.
+            Rather close too much tabs than have too much open.
+
+        0.5 lists:
+        - type: title
+          data: Lists
+        - type: desc
+          data: |
+            Think of ways you allow yourself to be distracted
+            or what are good ways to take a break.
+            We call this slacking off.
+            When we need a break off of work,
+            walking to get a glass of water or doing pushups is a good non addictive way to break work,
+            scrolling social media isn't.
+
+            Secondly, keep a list of topics you need to ponder over.
+            Look at this list before activities that relax the mind,
+            like running in nature.
+        - type: lists
+          data: $REPO_DIR/lifelists/main.yml
+        - type: lists
+          data: $REPO_DIR/lifelists/example2.yml
+
+        end:
+        - type: title
+          data: First stage completed
+        - type: desc
+          data: |
+            Congrats, you've visualized your roles and values,
+            started tracking your schedule
+            and thought of productive ways to fill your downtime.
+
+#   ▄▄▄                 ▄▄▄▄                                                  ▄▄ 
+#  █▀██                ██▀▀██                                                 ██ 
+#    ██               ██    ██            ▄▄█████▄   ▄████▄    ▄████▄    ▄███▄██ 
+#    ██               ██ ██ ██            ██▄▄▄▄ ▀  ██▄▄▄▄██  ██▄▄▄▄██  ██▀  ▀██ 
+#    ██               ██    ██             ▀▀▀▀██▄  ██▀▀▀▀▀▀  ██▀▀▀▀▀▀  ██    ██ 
+# ▄▄▄██▄▄▄     ██      ██▄▄██             █▄▄▄▄▄██  ▀██▄▄▄▄█  ▀██▄▄▄▄█  ▀██▄▄███ 
+# ▀▀▀▀▀▀▀▀     ▀▀       ▀▀▀▀               ▀▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀▀▀     ▀▀▀ ▀▀ 
     🧪seed:
     - type: title
       data: "Seed stage: build prototype | 🧪Prototyper"
-    - type: markdown
-      data: |
-        Last week we got the baseline and got into the habit of living with a calendar.
-        This week we keep up the good work but start adding goals to it.
-
-        Being correct in your planning is not the goal,
-        being correct and consistent in applying the tools and living more by calendar is.
-
-    - type: title
-      data: step1 organize your life
-    - type: desc
-      data: |
-        Incremental increase is the focus.
-        Don't try to change everything at once,
-        sticking to your schedule is the most important.
-        Be realistic, rather be less ambitious and succeed than overly ambitious and fail.
-    - type: calendar
-      data: &seedcal
-        routines: $STARTUP_DIR/stage0/routines.yml
-        activities: *actsfile
-
-
-    - type: title
-      data: Step2 Define goals
-    - type: personas
-      data: $STARTUP_DIR/stage1/roles-with-goals.yml
-    - type: foundation
-      data: *foundation_path
-    - $REPO_DIR/writings/manual/vision-board.yml
-
-    - type: title
-      data: step3 schedule your life
-    - type: desc
-      data: |
-        Planning your life should become an habit.
-        Being intentional with your time.
-        What percentage of the hours you have, you allocate to what.
-    - type: calendar
-      data: *seedcal
-
-    - type: title
-      data: Step4 Time management matrices
-    - type: desc
-      data: |
-        It is not useful to cram everything in a tmm, therefor we also use:
-        work planning: https://blog.lent.ink/post/open-source-erp
-        team/family board: https://trello.com/this-is-an-external-planning-tool
-        shoppinglist.google.com
     - type: tabs
       data:
-        one:
-        - type: timemangementmatrices
-          data: $REPO_DIR/tmm/student.yml
-        another:
-        - type: timemangementmatrices
-          data: $PERSONAL_DIR/tmatrices.yml
+        intro:
+        - type: markdown
+          data: |
+            Last week we got the baseline and got into the habit of living with a calendar.
+            This week we keep up the good work but start adding goals to it.
 
+            Being correct in your planning is not the goal,
+            being correct and consistent in applying the tools and living more by calendar is.
 
+            Don't make too much resolutions to yourself, rather plan in such a way that you can keep your promises to yourself.
 
+        1.1 organize:
+        - type: title
+          data: Organize your life
+        - type: desc
+          data: |
+            Incremental increase is the focus.
+            Don't try to change everything at once,
+            sticking to your schedule is the most important.
+            Be realistic, rather be less ambitious and succeed than overly ambitious and fail.
+        - type: calendar
+          data: &seedcal
+            routines: $STARTUP_DIR/stage0/routines.yml
+            activities: *actsfile
+
+        1.2 goals:
+        - type: title
+          data: Define goals (KPI/OKRS)
+        - type: personas
+          data: $STARTUP_DIR/stage1/roles-with-goals.yml
+        - type: foundation
+          data: *foundation_path
+        - $REPO_DIR/writings/manual/vision-board.yml
+
+        1.3 schedule:
+        - type: title
+          data: Schedule your life
+        - type: desc
+          data: |
+            Planning your life should become an habit.
+            Being intentional with your time.
+            What percentage of the hours you have, you allocate to what.
+        - type: calendar
+          data: *seedcal
+
+        1.4 distractions:
+        - type: title
+          data: Eliminate distractions
+        - type: desc
+          data: |
+            Hide away your sweets, display fruit.
+            Hide your TV, put your instrument in a prominent place.
+            Put your running shoes to the front, sport cloths at the top of your folded cloths.
+
+            On your phone's homescreen;
+            - Calendar widget (positive; helps you stick to calendar)
+            - note taking app (positive; organize your thoughts)
+            - DuoLingo (positive way to distract yourself)
+            - AntennaPod (neutral; allows distraction while doing chores)
+            - Translate (neutral; no risk of infinite scrolling)
+            - Maps (neutral)
+
+        1.5 priorities:
+        - type: title
+          data: Time management matrices
+        - type: desc
+          data: |
+            It is not useful to cram everything in a tmm, therefor we also use:
+            work planning: https://blog.lent.ink/post/open-source-erp
+            team/family board: https://trello.com/this-is-an-external-planning-tool
+            shoppinglist.google.com
+        - type: tabs
+          data:
+            one:
+            - type: timemangementmatrices
+              data: $REPO_DIR/tmm/student.yml
+            another:
+            - type: timemangementmatrices
+              data: $PERSONAL_DIR/tmatrices.yml
+
+        1.6 review:
+        - type: title
+          data: Review schedule
+        - type: desc
+          data: |
+            Review your schedule, reflect on it and iterate,
+            become more accurate/punctual.
+            An alternative is to be more flexible and less rigid,
+            making your schedule more forgiven/attainable.
+        - type: calendar
+          data: *seedcal
+
+#  ▄▄▄▄▄                ▄▄▄▄                                            ▄▄▄▄               
+# █▀▀▀▀██▄             ██▀▀██                                           ▀▀██               
+#       ██            ██    ██             ▄████▄    ▄█████▄   ██▄████    ██      ▀██  ███ 
+#     ▄█▀             ██ ██ ██            ██▄▄▄▄██   ▀ ▄▄▄██   ██▀        ██       ██▄ ██  
+#   ▄█▀               ██    ██            ██▀▀▀▀▀▀  ▄██▀▀▀██   ██         ██        ████▀  
+# ▄██▄▄▄▄▄     ██      ██▄▄██             ▀██▄▄▄▄█  ██▄▄▄███   ██         ██▄▄▄      ███   
+# ▀▀▀▀▀▀▀▀     ▀▀       ▀▀▀▀                ▀▀▀▀▀    ▀▀▀▀ ▀▀   ▀▀          ▀▀▀▀      ██    
+#                                                                                  ███
     💡early:
     - type: title
       data: "Early stage: iterate upon prototype | 💡Innovator"
-    - type: desc
-      data: |
-        Use a trigger/cue/anchor action to trigger a routine.
-        cue + routine + reward = habit
+    - type: tabs
+      data:
+        intro:
+        - type: desc
+          data: |
+            Use a trigger/cue/anchor action to trigger a routine.
+            cue + routine + reward = habit
 
-    - type: title
-      data: step1 depth to calendar
-    - type: desc
-      data: |
-        We are now going to derive from your calendar how you spend your time.
-    - type: baseurl
-      data: ROUTINES_FILE=$STARTUP_DIR/stage0/routines.yml
-    - type: baseurl
-      data: ACTS_FILE=$STARTUP_DIR/stage2/acts.yml
-    - $REPO_DIR/tablayouts/routine.yml
+        2.1 time allocation:
+        - type: title
+          data: Depth to calendar
+        - type: desc
+          data: |
+            We are now going to derive from your calendar how you spend your time.
+        - type: baseurl
+          data: ROUTINES_FILE=$STARTUP_DIR/stage0/routines.yml
+        - type: baseurl
+          data: ACTS_FILE=$STARTUP_DIR/stage2/acts.yml
+        - $REPO_DIR/tablayouts/routine.yml
 
-
-
+#  ▄▄▄▄▄                ▄▄▄▄                                                                ▄▄       
+# █▀▀▀▀██▄             ██▀▀██                                                       ██      ██       
+#      ▄██            ██    ██             ▄███▄██   ██▄████   ▄████▄  ██      ██ ███████   ██▄████▄ 
+#   █████             ██ ██ ██            ██▀  ▀██   ██▀      ██▀  ▀██ ▀█  ██  █▀   ██      ██▀   ██ 
+#      ▀██            ██    ██            ██    ██   ██       ██    ██  ██▄██▄██    ██      ██    ██ 
+# █▄▄▄▄██▀     ██      ██▄▄██             ▀██▄▄███   ██       ▀██▄▄██▀  ▀██  ██▀    ██▄▄▄   ██    ██ 
+#  ▀▀▀▀▀       ▀▀       ▀▀▀▀               ▄▀▀▀ ██   ▀▀         ▀▀▀▀     ▀▀  ▀▀      ▀▀▀▀   ▀▀    ▀▀ 
+#                                          ▀████▀▀
     📈growth:
     - type: title
       data: "Growth stage: measure performance and optimize | 📈Life Analyst"
+    - type: tabs
+      data:
+        intro:
+        - type: desc
+          data: |
+            What you measure you will monitor.
+            What you monitor you are aware of.
+            Awareness is the first step.
+            Tnen we acknowledge our short comings/inefficiencies.
+            From which we can begin to improve.
+            
+            A colleague asked why I did not include my deep sleep in the graph.
+            Basically I try to measure what I want to impact directly.
+            Since I already know that not drinking alcohol and doing physical exercise helps,
+            I just try to focus on that.
+            For goals I'm working towards, like the bar-muscle-up I put a decimal value
+            for all the day that I was working on it but still wasn't able to achieve it.
 
-    - type: desc
-      data: |
-        What you measure you will monitor.
-        What you monitor you are aware of.
-        Awareness is the first step.
-        Tnen we acknowledge our short comings/inefficiencies.
-        From which we can begin to improve.
-        
-        A colleague asked why I did not include my deep sleep in the graph.
-        Basically I try to measure what I want to impact directly.
-        Since I already know that not drinking alcohol and doing physical exercise helps,
-        I just try to focus on that.
-        For goals I'm working towards, like the bar-muscle-up I put a decimal value
-        for all the day that I was working on it but still wasn't able to achieve it.
+        3.1 Daily metrics:
+        - $REPO_DIR/metrics/main.yml
 
-    - $REPO_DIR/metrics/main.yml
+        3.2 Weekly metrics:
+        - $REPO_DIR/metrics/main.yml
 
+        3.3 Quarterly review:
+        - type: desc
+          data: |
+            We now know our roles, goals and how we allocate our time.
+            Let's do our first quarterly review.
+            Where we only tracked metrics for our daily and weekly review,
+            for our quarterly review we write down more text.
+            We set resolutions per quarter instead of per year.
+            Assuming you are a fit adult between 20 and 70,
+            annual review and resolutions would only give us 50 start.
+            Doing it per quarter let's us realign 200 times,
+            increasing the likelyhood of success.
+
+        3.4 Occasional metrics:
+        - type: desc
+          data: |
+            Some things are measured occasionally but still could be valuable to have access to.
+
+        3.5 Correlate:
+        - type: desc
+          data: |
+            We now have goals (KPI/OKR) and metrics.
+            Let's now be an analyst and see how we can correlate the two.
+            Using this found correlation, we can now schedule/plan
+            more efficient.
+        - $REPO_DIR/tablayouts/routine.yml
+
+#     ▄▄▄               ▄▄▄▄                                                                             ██                        
+#    ▄███              ██▀▀██                                                                            ▀▀                        
+#   █▀ ██             ██    ██             ▄████▄   ▀██  ██▀  ██▄███▄    ▄█████▄  ██▄████▄  ▄▄█████▄   ████      ▄████▄   ██▄████▄ 
+# ▄█▀  ██             ██ ██ ██            ██▄▄▄▄██    ████    ██▀  ▀██   ▀ ▄▄▄██  ██▀   ██  ██▄▄▄▄ ▀     ██     ██▀  ▀██  ██▀   ██ 
+# ████████            ██    ██            ██▀▀▀▀▀▀    ▄██▄    ██    ██  ▄██▀▀▀██  ██    ██   ▀▀▀▀██▄     ██     ██    ██  ██    ██ 
+#      ██      ██      ██▄▄██             ▀██▄▄▄▄█   ▄█▀▀█▄   ███▄▄██▀  ██▄▄▄███  ██    ██  █▄▄▄▄▄██  ▄▄▄██▄▄▄  ▀██▄▄██▀  ██    ██ 
+#      ▀▀      ▀▀       ▀▀▀▀                ▀▀▀▀▀   ▀▀▀  ▀▀▀  ██ ▀▀▀     ▀▀▀▀ ▀▀  ▀▀    ▀▀   ▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀    ▀▀▀▀    ▀▀    ▀▀ 
+#                                                             ██
     🧑‍🏫expansion:
     - type: title
       data: "Expansion stage: prove and present | 🧑‍🏫Life Coach"
     - type: tabs
       data:
-        main:
+        intro:
         - type: markdown
           data: |
             Are you really on track?
@@ -243,16 +389,43 @@
             You get to gift anyone a month for free by being their teacher (both have write access).
             Also serves as a commitment device, since you pretend to be a teacher, you need to sound convincing.
 
-        - type: lists
-          data: $REPO_DIR/lifelists/main.yml
-        another:
-        - type: lists
-          data: $REPO_DIR/lifelists/example2.yml
 
+# ▄▄▄▄▄▄▄               ▄▄▄▄                                     ██              
+# ██▀▀▀▀▀              ██▀▀██                                    ▀▀       ██     
+# ██▄▄▄▄              ██    ██             ▄████▄   ▀██  ██▀   ████     ███████  
+# █▀▀▀▀██▄            ██ ██ ██            ██▄▄▄▄██    ████       ██       ██     
+#       ██            ██    ██            ██▀▀▀▀▀▀    ▄██▄       ██       ██     
+# █▄▄▄▄██▀     ██      ██▄▄██             ▀██▄▄▄▄█   ▄█▀▀█▄   ▄▄▄██▄▄▄    ██▄▄▄  
+#  ▀▀▀▀▀       ▀▀       ▀▀▀▀                ▀▀▀▀▀   ▀▀▀  ▀▀▀  ▀▀▀▀▀▀▀▀     ▀▀▀▀ 
     🤹exit:
     - type: title
-      data: "Exit stage: outsource and delegate | 🤹Life Manager"
+      data: "Exit stage: automate, outsource and delegate | 🤹Life Manager"
+    - type: desc
+      data: |
+        In order to outsource work, we need to have things
+        have processees and documentation in place in order for it to safely hand it over.
 
+        The goals is to have things outsoureable.
+
+        - pack list
+        - pantry list
+        - data backup
+        - password and 2FA backup
+        - quarterly reviews
+        - continue incrementing calendar/schedule/habits
+        - list of messaging platforms to monitor (linkedin, email, whatsapp, etc.)
+        - list of websites to monitor + frequency (e.g. car toll portal, speed tickets, etc.)
+
+        Levels to achieve, are you able to easily deal with:
+        - laptop stolen
+        - phone stolen
+        - house being broken in (stuff stolen)
+        - house [burned down](https://www.youtube.com/watch?v=RmGynxJF8L0)
+        - prison
+        - coma
+
+    - type: title
+      data: stepX packing list
     - type: tabs
       data:
         packing lists:
@@ -312,8 +485,25 @@
             - type: route
               data: $REPO_DIR/roadtrips/walking-amsterdam.yml
 
+    - type: title
+      data: Minimalist (optional)
+    - type: markdown
+      data: |
+        Becoming a minimalist is about caring less about stuff and more about experiences.
+        Stuff degrate/depreciate and need to be maintained, it locks you down.
+        However... living like a true digital nomad is a only achievable for remote working singles.
 
+        Personally it took me more than a year to slowly/comfortably downsize (around 30y old).
+        Then after moving countries and getting real estate that needed renovation,
+        I again acquired a lot of stuff (tools/materials).
 
-
+    - type: title
+      data: stepX Your own dashboard
+    - type: markdown
+      data: |
+        Now we've grown out of the startup phase and are ready to have
+        our own true dashboard.
+        You can create your own or build upon a
+        [template](./).
 
 

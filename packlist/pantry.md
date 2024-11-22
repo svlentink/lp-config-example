@@ -1,13 +1,13 @@
 
 perishable:
-- eggs
+- eggs (3 eggs a day for testosterone levels)
 - fruit juice
 - fresh soup
 
 freezer:
 - 3x 1kg minced beef (Pingo Doce)
-- garlic
-- onion
+- chopped garlic
+- chopped onion
 
 shelf stable food:
 - 10x can tuna in water
@@ -31,9 +31,10 @@ shelf stable food:
 - tomato pulp
 - pesto
 - schredded coconut
-- coconut milk
+- whole fat (20%) coconut milk
 - salt
-- pepper
+- black pepper
+- cayenne pepper
 - dark chocolate
 - cornstarch
 - baking soda
