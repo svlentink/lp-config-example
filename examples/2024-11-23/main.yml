@@ -1,0 +1,3 @@
+- type: baseurl
+  data: STARTUP_DIR=https://dev-fs.lent.ink/gits/lp-config-example/examples/2024-11-23
+- https://dev-fs.lent.ink/gits/lp-config-example/tablayouts/startup-stage.yml

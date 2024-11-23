@@ -9,7 +9,7 @@
 
 - title: Healthy person
   desc: Mentally and physically fit, Mind body spirit
-  emoji: '&#129496;&#8205;&#9794;&#65039;'
+  emoji: 🧘‍♂️
   goals:
     rested:
       title: Well rested
@@ -33,7 +33,7 @@
 - title: Athlete
   desc: stamina, balance, strength, flexibility and coordination
   #notes: goal physiques; Joe Manganiello, Wolverine, Joe Wicks, David Gandy
-  emoji: '&#127939;'
+  emoji: 🏃
   goals:
     muscleup:
       title: Muscle-up
@@ -60,7 +60,7 @@
       status: idea
       title: Yoga teacher
       desc: Being able to instruct people
-      emoji: '&#129496;'
+      emoji: 🧘
     minutehandstand:
       title: One minute handstand
       desc: Handstand acrobatics
@@ -70,7 +70,7 @@
 #career: also check out: http://allgroanup.com/careerish/the-lure-of-comfortable/
 - title: IT professional
   desc: If working feels like a chore, a radical change is required.
-  emoji: '&#129489;&#8205;&#128187;'
+  emoji: 🧑‍💻
   goals:
     golang:
       title: Go language
@@ -90,7 +90,7 @@
 #music:
 - title: Musician
   desc: Music from the soul
-  emoji: '&#127928;'
+  emoji: 🎸
   goals:
     songs:
       title: 10x songs
@@ -111,12 +111,12 @@
 #faith:
 - title: Believer
   desc: Based on the holy scripture, not on the interpretation of people of it.
-  emoji: '&#128214;'
+  emoji: 📖
   goals:
     scriptures:
       title: Holy scriptures
       desc: Daily source of values
-      emoji: '&#128214;'
+      emoji: 📖
       status: progressing
 #family:
 #  - title: Family
@@ -130,7 +130,7 @@
 #        emoji: 🍽
 #organize:
 - title: Minimalist
-  emoji: '&#128465;&#65039;'
+  emoji: 🗑️
   goals:
     organized:
       title: Organized
@@ -144,7 +144,7 @@
       emoji: 💱
 - title: Socialite
   desc: As iron sharpens iron, so one person sharpens another.
-  emoji: '&#129346;'
+  emoji: 🥂
   goals:
     social:
       title: Weekly social
@@ -167,7 +167,7 @@
       status: maintaining
 - title: Philomath
   desc: Inquisitive, epistemophilia
-  emoji: '&#129299;'
+  emoji: 🤓
   goals:
     spanish:
       title: Spanish B1

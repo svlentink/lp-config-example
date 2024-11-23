@@ -1,0 +1,42 @@
+
+morning_routine:
+  start:
+  - days: &workdays [mo,tu,we,th,fr]
+    time: 07:00
+    trigger: alarm
+  actions:
+  - 5 lemon_water
+  - 10 meditate
+  - 30 personal_hygiene
+
+maker_schedule:
+  start:
+  - days: *workdays
+    time: 08:00
+    trigger: ready_for_work
+  actions:
+  - 240 deep_work
+
+manager_schedule:
+  start:
+  - days: *workdays
+    time: 13:00
+    trigger: belly_full
+  actions:
+  - 60 messaging
+  - 60 admin_work
+  - 60 data_organization
+  - 30 data_backup
+  - 30 messaging
+
+evening:
+  start:
+  - days: *workdays
+    time: 18:00
+    trigger: done_working
+  actions:
+  - 45 workout
+  - 15 personal_hygiene
+  - 60 eat
+  - 120 socialize
+  - 60 read

@@ -8,7 +8,7 @@
 - title: Healthy person
   desc: Mentally and physically fit
   #img: http://thevitalspirit.net/wp-content/uploads/2013/12/Mind-Body-Spirit-Wellness12.jpg
-  emoji: '&#129496;&#8205;&#9794;&#65039;'
+  emoji: 🧘‍♂️
   goals:
     rested:
       title: Well rested
@@ -29,7 +29,7 @@
   desc: stamina, balance, strength, flexibility and coordination
   #notes: goal physiques; Joe Manganiello, Wolverine, Joe Wicks, David Gandy
   #img: https://www.greatestphysiques.com/wp-content/uploads/2017/06/Joe-Wicks.09.jpg
-  emoji: '&#127939;'
+  emoji: 🏃
   goals:
     muscleup:
       title: Muscle-up
@@ -78,7 +78,7 @@
 - title: IT professional
   desc: If working feels like a chore, a radical change is required.
   #img: https://mentorphiledotcom.files.wordpress.com/2018/05/entrepreneur-definition-characteristics.jpg
-  emoji: '&#129489;&#8205;&#128187;'
+  emoji: 🧑‍💻
   goals:
     prototype:
       title: Prototyping
@@ -96,7 +96,7 @@
 - title: Musician
   desc: Music from the soul
   #img: https://i.ytimg.com/vi/QCbkwW6wwBk/maxresdefault.jpg
-  emoji: '&#127928;'
+  emoji: 🎸
   goals:
     songs:
       title: 10x songs
@@ -131,7 +131,7 @@
 - title: Believer
   desc: Based on the holy scripture, not on the interpretation of people of it.
   #img: http://www.jewishjewels.org/wp-content/uploads/2012/02/Yeshua-Torah-jj.jpg
-  emoji: '&#128214;'
+  emoji: 📖
   goals:
     scriptures:
       title: Holy scriptures
@@ -154,7 +154,7 @@
 #organize:
 - title: Minimalist
   #img: https://i.ytimg.com/vi/jrf_dMnatW0/maxresdefault.jpg
-  emoji: '&#128465;&#65039;'
+  emoji: 🗑️
   goals:
     organized:
       title: Organized
@@ -172,7 +172,7 @@
   desc: As iron sharpens iron, so one person sharpens another.
   # image of a networking event
   #img: https://coda.newjobs.com/api/imagesproxy/ms/cms/content30/images/networking-pro.jpg
-  emoji: '&#129346;'
+  emoji: 🥂
   goals:
     social:
       title: Weekly social
@@ -196,7 +196,7 @@
   desc: Inquisitive, epistemophilia
   #img: https://pbskids.org/curiousgeorge/img/cg-overlay-img.jpg
   #img: https://greatperformersacademy.com/images/images/Articles_images/tips-that-will-make-you-fast-learner.jpg
-  emoji: '&#129299;'
+  emoji: 🤓
   goals:
     spanish:
       title: Spanish B1

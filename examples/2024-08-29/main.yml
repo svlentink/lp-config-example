@@ -13,19 +13,19 @@
   data: &personas_student
   - title: Healthy person
     desc: Mentally and physically fit, Mind body spirit
-    emoji: '&#129496;'
+    emoji: 🧘
     goals: {}
   - title: Gym rat
     desc: Do you even lift bro?
-    emoji: '&#127947;&#65039;'
+    emoji: 🏋️
     goals: {}
   - title: Student
     desc: Working towards a remote job.
-    emoji: '&#129489;&#8205;&#127891;'
+    emoji: 🧑‍🎓
     goals: {}
   - title: Talmidah
     desc: Gerim
-    emoji: '&#128333;'
+    emoji: 🕍
     goals: {}
 
 - type: personas
