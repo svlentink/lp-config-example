@@ -1,0 +1,25 @@
+
+shower:
+  interval: daily
+  moscow: must
+  desc: wc, cold shower, shave, dental
+  energize: true # feeling refreshed afterward
+  flow: true
+  maslow: physiological
+
+dress:
+  interval: daily
+  desc: Prepared the day before #After stretching, put cloths on, stretching is done in underwear
+  moscow: must
+  energize: false
+  flow: false
+  maslow: physiological
+
+dental:
+  interval: daily
+  desc: Brushing earlier in the evening increases the likelihood of flossing and prevents late night snacks
+  moscow: must
+  energize: false
+  flow: false
+  maslow: physiological
+

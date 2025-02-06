@@ -1,0 +1,33 @@
+
+news:
+  interval: daily
+  moscow: could
+  desc: Daily news and hackernews
+  energize: false
+  flow: false
+  maslow: belong
+
+solarium:
+  interval: daily
+  energize: true
+  flow: true
+  moscow: could #during winter: wont
+  desc: during the winter months
+  maslow: physiological
+
+wake_up:
+  moscow: must
+  desc: Actually wake up, drink water, urgent msgs, toilet
+  interval: daily
+  energize: false
+  flow: false
+  maslow: physiological
+
+alarm:
+  moscow: must
+  desc: smartwatch, 3min later phone downstairs
+  interval: daily
+  energize: false
+  flow: false
+  maslow: physiological
+

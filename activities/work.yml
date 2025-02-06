@@ -1,0 +1,21 @@
+
+work:
+  interval: daily
+  moscow: must
+  energize: false
+  flow: depends
+  maslow: safety
+
+prototype:
+  interval: weekly
+  moscow: should
+  desc: Work out prototypes that could lead to a startup
+  energize: true # hobby
+  flow: true
+  maslow: esteem
+  goals:
+  - prototype
+
+
+
+

@@ -1,12 +1,12 @@
 
 main pockets:
-- keys
 - tissues
 - phone
 - chewing gum
 - $PACKLIST_DIR/sublist/wallet.yml
 - decoy wallet with one card and few bucks
 - plectrum
+- $PACKLIST_DIR/sublist/keys.yml
 Sleeves:
 - gloves attached
 - card in sleeve for toll gates (or smartwatch)

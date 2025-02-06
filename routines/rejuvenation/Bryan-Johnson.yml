@@ -1,0 +1,33 @@
+# https://www.youtube.com/watch?v=djiU_pFTEVE
+# FIXME update to never version: https://www.youtube.com/watch?v=XSaDL4EO0-g
+
+morning_johnson:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 07:00
+    trigger: alarm
+  actions:
+  - 2 dream_diary
+  - 1 health_stats # sleep_stats
+  - 1 dental #rinse mouth guard
+  - 1 daylight
+  - 1 body_basel_temp
+  - 1 health_stats # weigh
+  - 2 dental #brush teeth
+  - 2 facial
+  - 2 baldness_oil
+  - 5 meditate # https://youtu.be/djiU_pFTEVE?si=bdxqA4hBnaMkZR0q&t=2142
+  - 1 balancing #put shoes on
+  - 1 dressing
+  - 1 blinds_up
+  - 1 redlight #haircap redlight for hair growth
+  - 3 supplements #pills and powders
+  - 10 food #nutty pudding, olive oil, macadamia milk, fruits and peptides
+  - 2 microplastic_test
+  - 5 podcast
+  - 30 workout
+  - 2 supplements #injection
+  - 8 redlight #6min of light exposure
+  - 10 shower
+  - 10 food #veggies with kimchi and olive oil
+

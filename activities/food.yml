@@ -1,0 +1,53 @@
+
+cook:
+  interval: daily
+  moscow: should
+  energize: true
+  flow: true
+  desc: Food in slow cooker, quick wok or oven dish
+  maslow: physiological
+
+food2fridge:
+  interval: daily
+  desc: from freezer to fridge
+  moscow: should
+  energize: false
+  flow: false
+  maslow: physiological
+  goals:
+  - organized
+
+dishwasher:
+  interval: daily
+  moscow: must
+  energize: false
+  flow: false
+  maslow: physiological
+  goals:
+  - organized
+
+lunch:
+  interval: daily
+  moscow: should
+  energize: true
+  flow: false
+  desc: Walking and eating
+  maslow: physiological
+
+dinner:
+  interval: daily
+  moscow: should
+  energize: true
+  flow: true
+  maslow: physiological
+
+water:
+  interval: daily
+  moscow: must
+  energize: true
+  flow: false
+  maslow: physiological
+
+
+
+

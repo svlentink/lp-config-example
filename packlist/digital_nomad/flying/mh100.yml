@@ -28,6 +28,7 @@
       - dark chocolate
       - $PACKLIST_DIR/sublist/electronics.yml
       - $PACKLIST_DIR/sublist/toiletries.yml
+      - $PACKLIST_DIR/sublist/pills.yml
       - selfie stick
       laptop compartment:
       - laptop
@@ -39,10 +40,7 @@
       top:
       - packing cube:
         - eye mask (for sleeping)
-        - carabiner:
-          - keys
-          - earplugs in keychain
-          - keys other/parents house
+        - $PACKLIST_DIR/sublist/keys.yml
         - tiny zip lock bag:
           - spare passport photos
           - backup credit card

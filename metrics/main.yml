@@ -5,11 +5,11 @@
 - type: title
   data: Daily metrics
 - type: csv
-  data: $METRICS_DIR/glutebridge.csv
+  data: $METRICS_DIR/fitness/glutebridge.csv
 - type: csv
-  data: $METRICS_DIR/planking.csv
+  data: $METRICS_DIR/fitness/planking.csv
 - type: csv
-  data: $METRICS_DIR/wallsquad.csv
+  data: $METRICS_DIR/fitness/wallsquad.csv
 - type: csv
   data: $METRICS_DIR/meditation.csv
 - type: csv
@@ -20,28 +20,28 @@
 - type: title
   data: Weekly metrics
 - type: csv
-  data: $METRICS_DIR/body-composition.csv
+  data: $METRICS_DIR/body/composition.csv
 - type: csv
-  data: $METRICS_DIR/bloodoxygen.csv
+  data: $METRICS_DIR/body/blood/oxygen.csv
 - type: csv
-  data: $METRICS_DIR/bloodpressure.csv
+  data: $METRICS_DIR/body/blood/pressure.csv
 - type: csv
-  data: $METRICS_DIR/blood_glucose.csv
+  data: $METRICS_DIR/body/blood/glucose.csv
 - type: csv
-  data: $METRICS_DIR/ran.csv
+  data: $METRICS_DIR/fitness/ran.csv
 - type: csv
-  data: $METRICS_DIR/bar-muscle-up.csv
+  data: $METRICS_DIR/fitness/bar-muscle-up.csv
 - type: csv
   data: $METRICS_DIR/guitar.csv
 - type: csv
-  data: $METRICS_DIR/freestanding-handstand.csv
+  data: $METRICS_DIR/fitness/freestanding-handstand.csv
 
 - type: title
   data: Quarterly metrics
 - type: csv
-  data: $METRICS_DIR/fit-tests.csv
+  data: $METRICS_DIR/quarterly/fit-tests.csv
 - type: csv
-  data: $METRICS_DIR/sizes.csv
+  data: $METRICS_DIR/body/sizes.csv
 
 #- type: csv
 #  data: $METRICS_DIR/sleep.csv

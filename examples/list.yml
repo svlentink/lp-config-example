@@ -8,13 +8,23 @@
     - [dashboard](https://lent.ink/projects/life-planner/?dataurl=https://raw.githubusercontent.com/svlentink/lp-config-example/main/dashboard.yml)
     - [2024-11-23 DEV](https://dev-fs.lent.ink/gits/life-planner/?dataurl=https://dev-fs.lent.ink/gits/lp-config-example/examples/2024-11-23/main.yml)
 
-    <button onclick="prompt('hacked',22)">test</button>
-    <script>console.log('hacked by markdown')</script>
+- https://dev-fs.lent.ink/gits/lp-config-example/routines/test.yml
 
-- type: lists
-  data:
-    slacking:
-      desc: Activities that are short and I allow myself as a distracion
-      data:
-        pushups: '<button type="button" onclick="console.log(new Date())">abc</button>'
+- type: calendar
+  data: https://lent.ink/cors-proxy/www.1823.gov.hk/common/ical/gc/en.ics
+  #calendar.google.com/calendar/ical/chabad.orgcalendar%40gmail.com/public/basic.ics
+  #https://www.1823.gov.hk/en/hong-kong-public-holidays-ical
+  #
+
+
+
+
+
+#const response = await fetch("https://www.1823.gov.hk/common/ical/gc/en.ics", {
+#  method: "GET",
+#  mode: 'no-cors',
+#});
+
+
+
 

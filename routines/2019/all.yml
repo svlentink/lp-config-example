@@ -1,0 +1,97 @@
+
+type: tabs
+data:
+  intro:
+  - type: desc
+    data: |
+      Use a trigger/cue/anchor action to trigger a routine.
+      cue + routine + reward = habit
+
+  WFH winter PT:
+  - type: baseurl
+    data: ACTS_DIR=$REPO_DIR/activities
+  - type: desc
+    data: Working from home in rainy months in Porto
+  - type: calendar
+    data: &data
+      routines: $REPO_DIR/routines/2019/2023-winter.yml
+      activities: &acts
+      - $ACTS_DIR/deprecated.yml
+      - $ACTS_DIR/fitness.yml
+      - $ACTS_DIR/food.yml
+      - $ACTS_DIR/hygiene.yml
+      - $ACTS_DIR/leisure.yml
+      - $ACTS_DIR/organize.yml
+      - $ACTS_DIR/student.yml
+      - $ACTS_DIR/travel.yml
+      - $ACTS_DIR/work.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+# The following is historical
+  student:
+  - type: calendar
+    data:
+      <<: *data
+      routines: $REPO_DIR/routines/2019/student.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+  digital nomad:
+  - type: calendar
+    data:
+      <<: *data
+      routines: $REPO_DIR/routines/2019/digital-nomad.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+  pre-covid:
+  - type: desc
+    data: Pre-covid I already worked two days a week from home.
+  - type: calendar
+    data:
+      <<: *data
+      routines: $REPO_DIR/routines/2019/pre-covid.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+  WFH winter NL:
+  - type: desc
+    data: Working From Home in NL during winter
+  - type: calendar
+    data:
+      <<: *data
+      routines: $REPO_DIR/routines/2019/2019-winter.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+  biphasic sleep:
+  - type: desc
+    data: Concept
+  - type: calendar
+    data:
+      <<: *data
+      routines: $REPO_DIR/routines/biphasic-sleep.yml
+  - type: routines
+    data: *data
+  - type: plannedactivities
+    data: *data
+
+#  skipped:
+#  - type: desc
+#    data: Working From Home in NL during winter
+#  - type: baseurl
+#    data: ROUTINES_FILE=$REPO_DIR/routines/2019/2019-winter.yml
+#  - $REPO_DIR/tablayouts/routine.yml
+
+

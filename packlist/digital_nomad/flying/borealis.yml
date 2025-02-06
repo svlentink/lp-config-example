@@ -12,13 +12,14 @@
     - hidden-pouch: $PACKLIST_DIR/sublist/hidden-pouch.yml
     - running belt:
       - phone
-      - keys
+      - $PACKLIST_DIR/sublist/keys.yml
     - backpack (dry-weight 1.2kg):
         laptop (comined weight 4kg): $PACKLIST_DIR/sublist/laptop-compartment.yml
         main:
         - plastic bag: $PACKLIST_DIR/sublist/clothes/clothes.yml
         - $PACKLIST_DIR/sublist/clothes/undies.yml
         - $PACKLIST_DIR/sublist/toiletries.yml
+        - $PACKLIST_DIR/sublist/pills.yml
         - selfie stick
         front:
         - nuts

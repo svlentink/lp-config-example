@@ -1,0 +1,10 @@
+# https://balancethegrind.co/daily-routines/jocko-willink-daily-routine/
+# https://www.reddit.com/r/JockoPodcast/comments/krzg68/a_look_at_jocko_willinks_daily_routine_including/
+
+morning_jocko:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 4:30
+    trigger: alarm
+  actions:
+  - 45 workout # FIXME, expand to actual routine

@@ -1,0 +1,75 @@
+# https://www.davepascoe.net/home/my-daily-routines
+
+morning_pascoe:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 08:00
+    trigger: naturally_wake_up
+  actions:
+  - 8 electromagnetism # body mat
+  - 3 stretch # lower back
+  - 5 meditate # breathing exercise
+
+  - 2 supplements
+  - 1 podcasts # start playlist
+
+  - 5 trampoline
+  - 15 stretch
+  - 15 massage #foam roller
+  - 3 dental # brush teeth and tongue scraping
+  - 1 hygiene # facial
+  - 1 health_stats # weigh
+  - 1 health_stats # sleep_stats
+
+  - 2 supplements
+  - 5 health_stats # bioregulators
+  - 2 supplements # Proteolytic Enzymes
+  - 1 supplements # Qualia Senolytic
+
+  - 2 hydrate # tea
+  - 2 supplements # stemregen
+  - 2 hydrate # water
+
+  - 2 supplements # workout shake
+  - 10 workout
+  - 3 supplements
+  - 20 walk # sun exposure
+  - 10 workout # P90X
+  - 45 meditate # sauna and meditation
+  - 2 supplements # inject peptides
+  - 10 hygiene # shower
+  - 5 hygiene # lotion
+  - 20 food # breakfast
+
+
+afternoon_pascoe:
+  start:
+  - days: *alldays
+    time: 16:00
+    trigger: hungry
+  actions:
+  - 1 podcast # stop playlist
+  - 45 food # dinner
+  - 2 supplements
+  - 120 entertainment # Netflix
+  - 4 food # 2x Kiwi
+  - 10 food # nuts
+
+
+bedtime_pascoe:
+  start:
+  - days: *alldays
+    time: 22:00
+    trigger: naturally_wake_up
+  actions:
+  - 3 dental # floss, brush
+  - 2 hygiene # facial
+  - 10 hygiene # lotion
+  - 3 supplements
+  - 5 food # smoothie
+  - 4 supplements # Rapamycin and injections
+
+  - 5 meditate # breathing exercise
+  - 16 electromagnetism # body mat
+  - 20 meditate # Review, pray, say grace
+

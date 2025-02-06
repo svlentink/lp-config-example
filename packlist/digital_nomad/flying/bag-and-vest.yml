@@ -1,6 +1,13 @@
 
 - type: desc
   data: |
+    December 2024 update; we now use a "breathable fishing vest"
+    This vest has a mesh net frame with pockets on top of it,
+    my specific model even has a zipped mesh back pocket that fits a laptop in it.
+    Alternatives are [this](https://www.rova.nz/articles/this-puffer-jacket-zips-into-a-tote-so-lemme-secure-that-bag) special jacket for women,
+    or this unisex one:
+    [TS Convertible travel jacket bag](https://tsimpact.com/products/dual-layer-jacket-convertible-to-carry-on-shoulder-bag-backpack-travel-active-unisex).
+
     After using the MH100 for about 40 flights/8 months,
     I noticed I was not using my laptop on the road because
     it's just too hard to reach.
@@ -43,7 +50,7 @@
       main:
         R:
         - $PACKLIST_DIR/sublist/tubular-travel-pillow.yml
-        - $PACKLIST_DIR/sublist/clothes/stuffed_jacket.yml
+        - $PACKLIST_DIR/sublist/clothes/fishing-vest.yml
         - dark chocolate
 
         L small top:
@@ -55,26 +62,35 @@
         - empty zip lock bag for dirty laundry
         - see through packing cube with liquids
         L bottom:
-        - packing cube:
-          - eye mask (for sleeping)
-          - $PACKLIST_DIR/sublist/keys.yml
-          - tiny zip lock bag:
+          "3 in 1 jacket":
+            chest pocket:
+            - tissues
+            - Forclaz 10L compact backpack
+            L pocket:
+            - EMPTY
+            R pocket:
+            - chewing gum
+            sleeves:
+            - gloves attached
+            skipped:
+            - decoy wallet with one card and few bucks
+            - plectrum
             - spare passport photos
             - backup credit card
-          - pen case:
-            - pen
-            - permanent marker
-            - coins for public toilet
-      
+
   - on me:
+    - fleece vest
     - bone-conducting bluetooth headphones
     - hidden-pouch: $PACKLIST_DIR/sublist/hidden-pouch.yml
     - running belt:
       - phone
 
   - todo:
-    - elastics for leg workout
     - selfie stick
+    - re-usable zip ties to strap jacket to bag
+    - drawstring backpack
+    - elastics for leg workout
+    - empty zip lock bag for dirty laundry
 
   - non physical items:
     - $PACKLIST_DIR/sublist/tips.yml

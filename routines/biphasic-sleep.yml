@@ -1,0 +1,98 @@
+# This schedule lets you sleep 2x3h, which should be enough
+# You'll work during the day and have 7 hours at night; your second day
+
+#                   *** ## 0 ## ***
+#               *##                 ##*
+#           *##                         ##*
+#        21.            21 - 04             3
+#      *##  `\           second              ##*
+#    *##      `\           day               _. 4
+#   *##         `\_                     __-~'   ##*
+#  *##   18 - 21   `\_             __-~'         ##*
+# *##     sleep       `\_     __-~'     04 - 07   ##*
+# *##                    `\ ./           sleep    ##*
+# 18 ----------------------                       ##*
+# *##        ____----~~~~'/| `~~~~----____        ##*
+#  17 ---~~~'            | |  `~--___     `~~~--- 7
+#  *##                  /  |         `---___     ##*
+#   *##     13 - 17    |   |                `-- 8
+#    *##      work     |   |     08 - 12       ##*
+#       15            /    |      work        9
+#        *#           |    |               ##*
+#           *##       |    |            ##*
+#               *##  /     |        ##*
+#                   13* # 12 ## ***
+
+
+sleep:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 04:00
+    trigger: alarm
+  - days: *alldays
+    time: 18:00
+    trigger: alarm
+  actions:
+  - 180 sleep
+
+morning:
+  desc: morning ritual
+  start:
+  - days: *alldays
+    time: 07:00
+    trigger: alarm
+  actions:
+  - 60 morning_ritual
+
+afternoon:
+  start:
+  - days: *alldays
+    time: 17:00
+    trigger: work_done
+  actions:
+  - 60 evening_routine
+
+second-day:
+  start:
+  - days: *alldays
+    time: 21:00
+    trigger: alarm
+  actions:
+  - 420 study
+
+work:
+  desc: Morning=maker-time, afternoon=manager-time
+  start:
+  - days: &weekdays [mo,tu,we,th,fr]
+    time: 13:00
+    trigger: lunch time finished
+  - days: *weekdays
+    time: 08:00
+    trigger: finished morning ritual
+  actions:
+  - 240 work
+
+workout:
+  start:
+  - days:
+    - mo
+    - we
+    - fr
+    time: 12:05
+    trigger: lunch time
+  actions:
+  - 35 run
+  - 5 walk # cooling down
+  - 10 shower
+
+supermarket:
+  start:
+  - days:
+    - tu
+    - th
+    time: 12:05
+    trigger: lunch time
+  actions:
+  - 15 walk
+  - 20 supermarket
+  - 15 walk

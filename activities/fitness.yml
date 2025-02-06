@@ -1,0 +1,119 @@
+
+# Endurance
+walk:
+  moscow: could
+  desc: Walk through nature (with podcast)
+  interval: daily
+  energize: true
+  flow: true
+  maslow: safety
+pushups:
+  interval: daily
+  desc: pushups without counting
+  moscow: must
+  flow: false
+  energize: true # physical exercise relaxes the mind
+  maslow: safety
+  goals:
+  - frontlever
+hourlypushups:
+  moscow: should
+  desc: During working hours, 20 pushups per hour
+  interval: daily
+  energize: true
+  flow: false
+  maslow: safety
+core:
+  interval: daily
+  desc: 5m plank
+  moscow: should
+  energize: true
+  flow: false
+  maslow: safety
+  goals:
+  - frontlever
+run:
+  interval: weekly
+  moscow: should
+  energize: true
+  flow: true
+  maslow: safety
+  goals:
+  - marathon
+squads:
+  interval: daily
+  moscow: should
+  energize: true
+  flow: false
+  maslow: safety
+  desc: Meditate while wallsquad
+handstand:
+  moscow: could
+  desc: Practice handstand
+  interval: daily
+  energize: true
+  flow: true
+  maslow: safety
+
+# Flexibility
+stretch:
+  interval: daily
+  desc: Stretching
+  moscow: could
+  energize: true
+  flow: depends
+  maslow: safety
+  goals:
+  - yogateacher
+yoga:
+  moscow: could
+  energize: true
+  flow: true
+  interval: daily
+  maslow: safety
+  goals:
+  - yogateacher
+
+# Strength
+hourlyexercise:
+  moscow: should
+  interval: daily
+  energize: true
+  flow: false
+  maslow: safety
+  desc: |
+    While working from home, we aim to do hourly exercise to build the body.
+    We do this with very high weight so we are close to the 1rep max.
+    This allows us to do very few reps, resulting in no sweat, but still getting results.
+    08:00 one arm pushup L
+    09:00 one arm pushup R
+    10:00 one arm pullup L
+    11:00 one arm pullup R
+    12:00 pistol squad L
+    13:00 pistol squad R
+    14:00 single leg glute bridge L
+    15:00 single leg glute bridge R
+    16:00 front lever/gironda pull up
+    17:00 extended plank
+    18:00 stretching
+# shoulder width stand deadlift for glutes
+sprint:
+  interval: daily
+  moscow: could
+  energize: true
+  flow: false
+  desc: One minute sprint http://youtu.be/SHN-4ve81TY
+  maslow: safety
+  goals:
+  - marathon
+wakeupwalk:
+  desc: |
+    Get natural daylight in your eyes.
+    Walk while reconnecting with a friend/neighbor.
+    Have calls, send voice messages etc.
+  interval: daily
+  moscow: should
+  energize: true
+  flow: true
+  maslow: safety
+

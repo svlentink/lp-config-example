@@ -60,6 +60,7 @@ data:
         - laptop
     - plastic bag: $PACKLIST_DIR/sublist/clothes/clothes.yml
     - $PACKLIST_DIR/sublist/toiletries.yml
+    - $PACKLIST_DIR/sublist/pills.yml
     - USB C (work) laptop/phone charger
 
     tank bag: $PACKLIST_DIR/sublist/motorcycle/tankbag.yml

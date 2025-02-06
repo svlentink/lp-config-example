@@ -39,6 +39,7 @@ data:
     R removable case (35L):
     - plastic bag: $PACKLIST_DIR/sublist/clothes/clothes.yml
     - $PACKLIST_DIR/sublist/toiletries.yml
+    - $PACKLIST_DIR/sublist/pills.yml
     - $PACKLIST_DIR/sublist/clothes/undies.yml
     - USB C (work) laptop/phone charger
     - plastic bag:

@@ -15,6 +15,7 @@ rear_seats:
   - towels
   - travel towel / sarong
   - $PACKLIST_DIR/sublist/toiletries.yml
+  - $PACKLIST_DIR/sublist/pills.yml
   - $PACKLIST_DIR/sublist/clothes/undies.yml
   folding_crate_4:
   - spare

@@ -1,0 +1,154 @@
+# Organized life
+plan:
+  interval: daily
+  moscow: must
+  desc: on weekdays; plan day. In weekend; update long-term planning
+  energize: false # requires prefrontal cortex
+  flow: false
+  maslow: safety
+  goals:
+  - organized
+
+
+# Organized space
+tidy:
+  interval: daily
+  energize: true # the result makes me feel good
+  flow: false
+  desc: digitally (e.g. notes) and physically (e.g. desk)
+  moscow: should
+  maslow: safety
+  goals:
+  - organized
+pack:
+  interval: daily
+  desc: bag and clothing
+  moscow: should
+  energize: false
+  flow: false
+  maslow: physiological
+  goals:
+  - organized
+
+
+# Organized data
+backup:
+  interval: weekly
+  energize: false
+  flow: false
+  desc: >
+    first sunday phone,
+    second laptop,
+    third server,
+    fourth smart watch and ereader
+    takeout.google.com
+    Make sure google photos are converted to high quality, not original photos.google.com/quotamanagement
+  moscow: should
+  maslow: safety
+update-resume:
+  interval: monthly
+  energize: false
+  flow: false
+  desc: Regurally update list of activities and tools used
+  moscow: should
+  maslow: safety
+automation:
+  interval: weekly
+  energize: false
+  flow: false
+  moscow: should
+  maslow: safety
+  desc: |
+    By first standardizing more parts of our life/work/business
+    we enable as a second step to outsource or automate these parts.
+    Using standardized tooling/processes enables outsourcing.
+portfolio_management:
+  interval: weekly
+  desc: Finances
+  moscow: should
+  energize: false # costs/burns mental energy
+  flow: false # possible to get into flow state?
+  maslow: safety
+  goals:
+  - finance
+
+
+# Organized mind
+dream_diary:
+  moscow: could
+  desc: Part of lucid dreaming exercise
+  interval: daily
+  energize: true
+  flow: true
+  maslow: actualization
+blog:
+  moscow: could
+  desc: Write, proof read or publish (writing is a practice of organizing ones mind)
+  interval: daily
+  energize: false
+  flow: true
+  maslow: esteem
+psychoanalysis:
+  desc: self psychology
+  moscow: should
+  energize: false
+  flow: true
+  interval: weekly
+  maslow: actualization
+day-review:
+  interval: daily
+  moscow: should
+  desc: >
+    What did I do good?
+    Bad?
+    Stuck in loops?
+    What conversations do I need to have?
+    What unmade decisions do I have?
+    Helicopter overview
+  energize: false
+  flow: false
+  maslow: esteem
+meditate:
+  interval: daily
+  desc: headspace
+  moscow: should
+  energize: true
+  flow: true
+  maslow: actualization
+  goals:
+  - rested
+gratitude:
+  interval: daily
+  moscow: could
+  energize: true
+  flow: false
+  maslow: belong
+  goals:
+  - focus
+
+
+# Organized (professional) relationships
+message:
+  interval: daily
+  desc: >
+    Work email
+    Linkedin
+    Private email
+    Whatsapp
+    Signal
+    Telegram
+    Fb
+    Other apps.
+  moscow: should
+  energize: false
+  flow: false
+  maslow: belong
+address_power:
+  interval: daily
+  desc: See benjamin franklin diary
+  moscow: should
+  energize: false
+  flow: true
+  maslow: actualization
+  goals:
+  - scriptures

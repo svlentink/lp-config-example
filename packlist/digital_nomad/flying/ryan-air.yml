@@ -17,7 +17,7 @@
       - FIXME
     - running belt:
       - phone
-      - keys
+      - $PACKLIST_DIR/sublist/keys.yml
       
     - jacket / jeans: $PACKLIST_DIR/sublist/clothes/3in1jacket.yml
 

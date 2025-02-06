@@ -1,7 +1,36 @@
+🅰: # 3days
+  start:
+  - days: &projectAdays [mo,we,fr]
+    time: 08:00
+    trigger: ready_for_work
+  - days: *projectAdays
+    time: 13:00
+    trigger: past_lunch
+  actions:
+  - 210 projectA
+
+🅱: # 2days
+  start:
+  - days: &projectBdays [tu,th]
+    time: 08:00
+    trigger: ready_for_work
+  - days: *projectBdays
+    time: 13:00
+    trigger: past_lunch
+  actions:
+  - 210 projectB
+
+©: # 1day
+  start:
+  - days: [su]
+    time: 13:00
+    trigger: past_lunch
+  actions:
+  - 210 projectC
 
 morning_routine:
   start:
-  - days: &workdays [mo,tu,we,th,fr]
+  - days: &workdays [su,mo,tu,we,th,fr]
     time: 07:00
     trigger: alarm
   actions:
@@ -9,24 +38,18 @@ morning_routine:
   - 10 meditate
   - 30 personal_hygiene
 
-maker_schedule:
-  start:
-  - days: *workdays
-    time: 08:00
-    trigger: ready_for_work
-  actions:
-  - 240 deep_work
-
 manager_schedule:
   start:
   - days: *workdays
-    time: 13:00
-    trigger: belly_full
+    time: 11:30
+    trigger: post_deep_work
+  - days: *workdays
+    time: 16:30
+    trigger: post_deep_work
   actions:
-  - 60 messaging
-  - 60 admin_work
-  - 60 data_organization
-  - 30 data_backup
+#  - 60 admin_work
+#  - 60 data_organization
+#  - 30 data_backup
   - 30 messaging
 
 evening:

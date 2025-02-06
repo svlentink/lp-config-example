@@ -1,0 +1,38 @@
+
+prepare-lecture:
+  interval: weekly
+  moscow: could
+  energize: false
+  flow: false
+  desc: Prepare lecture
+  maslow: esteem
+
+lecture:
+  interval: weekly
+  moscow: should
+  energize: false
+  flow: false
+  maslow: esteem
+
+homework:
+  interval: weekly
+  moscow: must
+  energize: false
+  flow: depends
+  maslow: esteem
+
+ds:
+  interval: weekly
+  moscow: should
+  energize: false
+  flow: depends
+  desc: Data Science
+  maslow: esteem
+
+band_rehearsal:
+  interval: weekly
+  energize: true
+  flow: depends
+  desc: Jamming
+  moscow: must
+  maslow: esteem

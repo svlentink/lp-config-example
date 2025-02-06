@@ -11,7 +11,7 @@
   - chewing gum
   - tissues
   - $PACKLIST_DIR/sublist/toiletries.yml
-  Sleeves:
+  sleeves:
   - gloves attached
   skipped:
   - decoy wallet with one card and few bucks

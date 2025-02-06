@@ -1,0 +1,49 @@
+
+photography:
+  moscow: should
+  desc: Practice with phone camera
+  interval: daily
+  energize: false
+  flow: false
+  maslow: belong
+
+# Before Covid lockdown
+museum:
+  moscow: could
+  desc: Visit museum
+  energize: true
+  flow: false
+  interval: weekly
+  maslow: belong
+  goals:
+  - museum
+  - datenite
+
+read:
+  interval: daily
+  desc: Book, no articles/screens
+  moscow: should
+  energize: true # dependant on the content
+  flow: true
+  maslow: actualization
+  goals:
+  - reader
+
+audiobook:
+  interval: daily
+  desc: learn spanish during commute
+  moscow: could
+  energize: false # requires active listening
+  flow: false
+  maslow: actualization
+
+guitar:
+  interval: weekly
+  desc: Just play
+  moscow: could
+  energize: true # enjoyable activity
+  flow: true
+  maslow: esteem
+  goals:
+  - songs
+

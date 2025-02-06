@@ -1,0 +1,7 @@
+type: calendar
+data:
+  routines:
+  #- $STARTUP_DIR/stage0/routines.yml
+  - https://dev-fs.lent.ink/gits/lp-config-example/routines/rejuvenation/Bryan-Johnson.yml
+  - https://dev-fs.lent.ink/gits/lp-config-example/routines/rejuvenation/David-Pascoe.yml
+  activities: &actsfile $STARTUP_DIR/stage2/acts.yml

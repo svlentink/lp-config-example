@@ -72,40 +72,7 @@
     routines:
     - type: title
       data: Habits and routines
-    - type: tabs
-      data:
-        intro:
-        - type: desc
-          data: |
-            Use a trigger/cue/anchor action to trigger a routine.
-            cue + routine + reward = habit
-        WFH winter PT:
-        - type: desc
-          data: Working from home in rainy months in Porto
-        - type: baseurl
-          data: ROUTINES_FILE=$REPO_DIR/routines/2023-winter.yml
-        - $REPO_DIR/tablayouts/routine.yml
-# The following is historical
-        student:
-        - type: baseurl
-          data: ROUTINES_FILE=$REPO_DIR/routines/student.yml
-        - $REPO_DIR/tablayouts/routine.yml
-        digital nomad:
-        - type: baseurl
-          data: ROUTINES_FILE=$REPO_DIR/routines/digital-nomad.yml
-        - $REPO_DIR/tablayouts/routine.yml
-        pre-covid:
-        - type: desc
-          data: Pre-covid I already worked two days a week from home.
-        - type: baseurl
-          data: ROUTINES_FILE=$REPO_DIR/routines/pre-covid.yml
-        - ./tablayouts/routine.yml
-        WFH winter NL:
-        - type: desc
-          data: Working From Home in NL during winter
-        - type: baseurl
-          data: ROUTINES_FILE=$REPO_DIR/routines/2019-winter.yml
-        - $REPO_DIR/tablayouts/routine.yml
+    - $REPO_DIR/routines/2019/all.yml
 
     life lists:
     - type: tabs
@@ -156,7 +123,9 @@
                 Digital nomad by motorcycle in the vicinity of his storage of belongings.
                 Thus able to switch clothes etc. from there every week.
             - $PACKLIST_DIR/digital_nomad/motorcycle/short-term.yml
-            carry-on-backpack_2024:
+            carry-on-backpack_2024_v2:
+            - $PACKLIST_DIR/digital_nomad/flying/bag-and-vest.yml
+            carry-on-backpack_2024_v1:
             - $PACKLIST_DIR/digital_nomad/flying/forclaz500.yml
             old_carry-on_2023:
             - $PACKLIST_DIR/digital_nomad/flying/mh100.yml

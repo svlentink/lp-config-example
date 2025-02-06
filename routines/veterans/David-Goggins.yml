@@ -1,0 +1,24 @@
+# https://entreresource.com/david-goggins-daily-routine/
+# https://www.youtube.com/watch?v=p9UMt3O4glo
+
+morning_goggins:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 5:30
+    trigger: alarm
+  actions:
+  - 120 run #20km
+  - 25 food
+  - 60 gym
+
+
+evening_goggins:
+  start:
+  - days: *alldays
+    time: 19:00
+    trigger: alarm
+  actions:
+  - 120 stretch #meditation
+  - 60 family # spouse
+  - 60 bike # stationary bike; 3-4days a week
+

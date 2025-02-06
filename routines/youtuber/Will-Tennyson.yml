@@ -1,0 +1,34 @@
+# https://www.youtube.com/watch?v=kIWXzXLkau4
+
+# 8pm to bed, keep blinds open
+
+morning_will_tennyson:
+  start:
+  - days: &alldays [mo,tu,we,th,fr,sa,su]
+    time: 4:30
+    trigger: iron swan #alternative: Adagio for Strings - Samuel Barber
+  actions:
+  - 5 pushups
+  - 15 shower # cold shower
+  - 2 make_bed
+  - 5 coffee
+  - 30 run
+  - 5 tea # titanium tea
+  - 5 emails # pomodoro
+  - 5 mindfullness # pomodoro
+  - 5 todolist # pomodoro; todolist for that day
+  - 20 travel
+  - 45 gym
+  - 15 sauna
+  - 20 travel
+  - 15 shower
+  - 25 food # crepes for breakfast
+  - 1 dance
+  - 120 manager_time # meetings
+  - 150 maker_time # laptop
+  - 60 maker_time # video
+  - 30 organize # clean room
+  - 60 shopping
+  - 30 cooking
+  - 30 food # dinner
+

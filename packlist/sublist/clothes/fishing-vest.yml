@@ -1,0 +1,48 @@
+
+Breathable fishing vest:
+  back pocket:
+  - second laptop
+  L arm side:
+    top:
+      zipped pocket:
+      - $PACKLIST_DIR/sublist/pills.yml
+      velcro pocket:
+      - $PACKLIST_DIR/sublist/keys.yml
+    bottom:
+      inside:
+      - EMPTY
+      big zipper:
+      - $PACKLIST_DIR/sublist/electronics.yml
+      smaller zipper:
+      - nuts
+      L velcro:
+      - EMPTY
+      R velcro:
+      - EMPTY
+  R arm side:
+    top:
+      zipped pocket:
+      - eye mask (for sleeping)
+      - spare phone case
+      - spare drawstring backpack
+      - pen case:
+        - pen
+        - permanent marker
+        - coins for public toilet
+      L velcro pocket:
+      - 2x spare ziplock bag
+      R velcro pocket:
+      - 
+    bottom:
+      inside:
+      - EMPTY
+      big zipped:
+      - $PACKLIST_DIR/sublist/toiletries.yml
+      smaller zipper:
+      - nuts
+      L velcro:
+      - EMPTY
+      R velcro:
+      - EMPTY
+
+

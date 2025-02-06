@@ -1,0 +1,27 @@
+
+to_train:
+  interval: daily
+  energize: true
+  flow: false
+  desc: Bike/walk from/to train
+  maslow: safety
+
+bike:
+  interval: weekly
+  energize: true
+  flow: depends
+  desc: bike
+  maslow: safety
+
+drive:
+  moscow: must
+  interval: weekly
+  energize: false
+  flow: true
+  maslow: physiological
+
+gasstation:
+  moscow: must
+  energize: true
+  flow: false
+  maslow: physiological
